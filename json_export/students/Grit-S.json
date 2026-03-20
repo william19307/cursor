@@ -1,0 +1,355 @@
+{
+  "name": "坚毅量表简版",
+  "short_name": "Grit-S",
+  "description": "评估长期目标坚持力（努力坚持）和兴趣一致性的8题量表。由Duckworth AL等2007年编制，中文版已在中小学生中验证。得分越高坚毅性越强。",
+  "applicable_levels": [
+    1,
+    2,
+    3
+  ],
+  "question_count": 8,
+  "estimated_mins": 3,
+  "scoring_type": "both",
+  "scoring_rule": {
+    "method": "formula",
+    "formula": "perseverance = mean(items 2,4,6,8); consistency = mean(items 1,3,5,7 reversed); total = mean(all 8)",
+    "reverse_items": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "subscales": {
+      "perseverance": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "consistency": [
+        1,
+        3,
+        5,
+        7
+      ]
+    }
+  },
+  "result_levels": [
+    {
+      "range": [
+        1.0,
+        2.5
+      ],
+      "level": "low",
+      "label": "低坚毅性（约P10以下）",
+      "alert": null,
+      "note": "均分"
+    },
+    {
+      "range": [
+        2.5,
+        3.8
+      ],
+      "level": "medium",
+      "label": "中等坚毅性",
+      "alert": null,
+      "note": "均分"
+    },
+    {
+      "range": [
+        3.8,
+        5.0
+      ],
+      "level": "high",
+      "label": "高坚毅性（约P50以上）",
+      "alert": null,
+      "note": "均分"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "新思想和新项目有时会干扰我之前的项目",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不像我",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "不太像我",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "有点像我",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "基本像我",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "非常像我",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "consistency",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "挫折不会让我气馁。我不轻易放弃",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不像我",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太像我",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有点像我",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "基本像我",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常像我",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "perseverance",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "我经常给自己设定一个目标，但后来又追求不同的目标",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不像我",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "不太像我",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "有点像我",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "基本像我",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "非常像我",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "consistency",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "我是一个非常勤奋努力的人",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不像我",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太像我",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有点像我",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "基本像我",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常像我",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "perseverance",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "对于需要几个月才能完成的项目，我很难集中注意力",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不像我",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "不太像我",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "有点像我",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "基本像我",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "非常像我",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "consistency",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "只要我开始了一件事情，我就会去完成",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不像我",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太像我",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有点像我",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "基本像我",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常像我",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "perseverance",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "我的兴趣每年都在变化",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不像我",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "不太像我",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "有点像我",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "基本像我",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "非常像我",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "consistency",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "我很努力，绝不放弃",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不像我",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太像我",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有点像我",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "基本像我",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常像我",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "perseverance",
+      "is_alert_item": false
+    }
+  ]
+}

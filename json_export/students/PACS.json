@@ -1,0 +1,795 @@
+{
+  "name": "亲子沟通量表",
+  "short_name": "PACS",
+  "description": "评估青少年与父母沟通质量的20题量表，含开放性和问题性沟通两个维度（父亲版/母亲版各一份）。由Barnes HL & Olson DH 1985年编制，安伯欣2004年中文版，α=0.84-0.90。",
+  "applicable_levels": [
+    2,
+    3
+  ],
+  "question_count": 20,
+  "estimated_mins": 8,
+  "scoring_type": "both",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "subscales": {
+      "open": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "problem": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "subscale_labels": {
+      "open": "开放性沟通",
+      "problem": "问题性沟通（反向后高分=良好）"
+    }
+  },
+  "result_levels": [
+    {
+      "range": [
+        20,
+        40
+      ],
+      "level": "poor",
+      "label": "沟通质量较差",
+      "alert": "yellow",
+      "note": "总分（含反向处理）"
+    },
+    {
+      "range": [
+        41,
+        70
+      ],
+      "level": "moderate",
+      "label": "沟通质量中等",
+      "alert": null,
+      "note": "总分"
+    },
+    {
+      "range": [
+        71,
+        100
+      ],
+      "level": "good",
+      "label": "沟通质量良好",
+      "alert": null,
+      "note": "总分"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "我可以与父亲/母亲讨论我对人或事的看法，而不必觉得尴尬或有所顾忌",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有些不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些同意",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "open",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "父亲/母亲总是很认真地听我说话",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有些不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些同意",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "open",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "父亲/母亲尝试理解我的感受",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有些不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些同意",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "open",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "父亲/母亲对我无话不谈",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有些不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些同意",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "open",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "父亲/母亲善于站在我的立场上帮我解决问题",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有些不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些同意",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "open",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "我很容易向父亲/母亲说出心里话",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有些不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些同意",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "open",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "父亲/母亲尝试理解我",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有些不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些同意",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "open",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "我可以向父亲/母亲提出问题，父亲/母亲都能认真回答",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有些不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些同意",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "open",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "父亲/母亲总向我表示他们是爱我的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有些不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些同意",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "open",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "当我生气时，父亲/母亲尝试理解我",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有些不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些同意",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "open",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "我向父亲/母亲表达自己的感受时，往往会令我感到委屈",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "有些不同意",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些同意",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "problem",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "当我和父亲/母亲谈话时，往往感到厌烦或想停止谈话",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "有些不同意",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些同意",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "problem",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "我不能诚实地告诉父亲/母亲我真正的感受",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "有些不同意",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些同意",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "problem",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "我有时会避免向父亲/母亲提一些问题",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "有些不同意",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些同意",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "problem",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "父亲/母亲经常批评我，让我很不舒服",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "有些不同意",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些同意",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "problem",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 16,
+      "question_text": "我和父亲/母亲的谈话不如我希望的那么顺畅",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "有些不同意",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些同意",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "problem",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 17,
+      "question_text": "父亲/母亲经常打断我",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "有些不同意",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些同意",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "problem",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 18,
+      "question_text": "当我们在某件事上意见不同时，父亲/母亲会让我感到恐惧",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "有些不同意",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些同意",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "problem",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 19,
+      "question_text": "父亲/母亲贬低我的感受",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "有些不同意",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些同意",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "problem",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 20,
+      "question_text": "父亲/母亲抱怨我讲话太多",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "有些不同意",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些同意",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "problem",
+      "is_alert_item": false
+    }
+  ]
+}

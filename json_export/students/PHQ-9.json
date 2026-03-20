@@ -1,0 +1,347 @@
+{
+  "name": "患者健康问卷抑郁量表",
+  "short_name": "PHQ-9",
+  "description": "用于筛查和评估抑郁症状严重程度的9题自评量表，评估过去两周的症状频率。由Kroenke K等2001年编制，Pfizer官方免费授权使用。",
+  "applicable_levels": [
+    2,
+    3
+  ],
+  "question_count": 9,
+  "estimated_mins": 5,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        4
+      ],
+      "level": "normal",
+      "label": "无抑郁",
+      "alert": null
+    },
+    {
+      "range": [
+        5,
+        9
+      ],
+      "level": "mild",
+      "label": "轻微抑郁",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        10,
+        14
+      ],
+      "level": "moderate",
+      "label": "中度抑郁",
+      "alert": "orange"
+    },
+    {
+      "range": [
+        15,
+        19
+      ],
+      "level": "moderately_severe",
+      "label": "中重度抑郁",
+      "alert": "red"
+    },
+    {
+      "range": [
+        20,
+        27
+      ],
+      "level": "severe",
+      "label": "重度抑郁",
+      "alert": "red"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": [
+      {
+        "question_no": 9,
+        "condition": "value >= 1",
+        "alert": "red",
+        "reason": "自杀/自伤念头，须立即评估安全性"
+      }
+    ]
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "做事时提不起劲或没有兴趣",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全不会",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几天",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "超过一半天数",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "几乎每天",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "感到心情低落、沮丧或绝望",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全不会",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几天",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "超过一半天数",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "几乎每天",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "入睡困难、睡不安稳或睡眠过多",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全不会",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几天",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "超过一半天数",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "几乎每天",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "感觉疲倦或没有活力",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全不会",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几天",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "超过一半天数",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "几乎每天",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "食欲不振或吃太多",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全不会",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几天",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "超过一半天数",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "几乎每天",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "觉得自己很糟糕，或觉得自己很失败，或让自己或家人失望",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全不会",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几天",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "超过一半天数",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "几乎每天",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "对事物专注有困难，例如阅读报纸或看电视时不能集中注意力",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全不会",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几天",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "超过一半天数",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "几乎每天",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "动作或说话速度缓慢到别人已经觉察，或正好相反——烦躁或坐立不安，动来动去的情况比平时更多",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全不会",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几天",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "超过一半天数",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "几乎每天",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "有不如死掉或用某种方式伤害自己的念头",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全不会",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几天",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "超过一半天数",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "几乎每天",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": true
+    }
+  ]
+}

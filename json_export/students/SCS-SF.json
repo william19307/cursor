@@ -1,0 +1,516 @@
+{
+  "name": "自我同情量表简版",
+  "short_name": "SCS-SF",
+  "description": "评估自我同情程度的12题量表（6个维度各2题）。由Raes F等2011年编制，α=0.80+。中文版青少年版（SCS-Y）已在中国青少年中验证。",
+  "applicable_levels": [
+    2,
+    3
+  ],
+  "question_count": 12,
+  "estimated_mins": 5,
+  "scoring_type": "subscale",
+  "scoring_rule": {
+    "method": "formula",
+    "formula": "total_mean = mean of all 6 subscale means (after reverse scoring)",
+    "reverse_items": [
+      3,
+      5,
+      8,
+      9,
+      10,
+      11
+    ],
+    "subscales": {
+      "self_kindness": [
+        4,
+        12
+      ],
+      "self_judgment": [
+        3,
+        8
+      ],
+      "common_humanity": [
+        2,
+        7
+      ],
+      "isolation": [
+        9,
+        10
+      ],
+      "mindfulness": [
+        1,
+        6
+      ],
+      "over_identification": [
+        5,
+        11
+      ]
+    },
+    "subscale_labels": {
+      "self_kindness": "自我友善",
+      "self_judgment": "自我评判（反向）",
+      "common_humanity": "共通人性",
+      "isolation": "孤立感（反向）",
+      "mindfulness": "正念",
+      "over_identification": "过度认同（反向）"
+    }
+  },
+  "result_levels": [
+    {
+      "range": [
+        1.0,
+        2.49
+      ],
+      "level": "low",
+      "label": "自我同情程度低",
+      "alert": "yellow",
+      "note": "总均分（1-5）"
+    },
+    {
+      "range": [
+        2.5,
+        3.5
+      ],
+      "level": "moderate",
+      "label": "自我同情程度中等",
+      "alert": null,
+      "note": "总均分"
+    },
+    {
+      "range": [
+        3.5,
+        5.0
+      ],
+      "level": "high",
+      "label": "自我同情程度高",
+      "alert": null,
+      "note": "总均分"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "当我经历某些痛苦时，我试着以平衡的方式来对待这些感受",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "mindfulness",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "当我感到自己不足时，我提醒自己大多数人也会有这种感受",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "common_humanity",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "在感到困境时，我倾向于责备自己",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎从不",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "几乎总是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "self_judgment",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "当我面对生活中的困难时，我对自己是友善和体谅的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "self_kindness",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "如果失败了，我沉浸在失败的感受中",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎从不",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "几乎总是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "over_identification",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "感觉不安时，我试着以较为平衡的方式看待事情",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "mindfulness",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "当我感到自己不足时，我会提醒自己这是共同的人类体验",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "common_humanity",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "感到低落时，我不接纳且批判自己的缺失",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎从不",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "几乎总是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "self_judgment",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "心情低落时，我倾向于觉得大多数人比我快乐",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎从不",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "几乎总是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "isolation",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "在重要的事上失败时，我会感到孤单",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎从不",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "几乎总是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "isolation",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "在重要的事上受挫时，我沉溺在自己不够好的感受中",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎从不",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "几乎总是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "over_identification",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "感到低落时，我给予自己关爱和温暖",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "self_kindness",
+      "is_alert_item": false
+    }
+  ]
+}

@@ -1,0 +1,834 @@
+{
+  "name": "抑郁-焦虑-压力量表21项",
+  "short_name": "DASS-21",
+  "description": "评估抑郁、焦虑、压力三维度的21题自评量表，评估过去一周的状态。由Lovibond & Lovibond 1995年编制，澳大利亚新南威尔士大学官方免费提供。",
+  "applicable_levels": [
+    2,
+    3
+  ],
+  "question_count": 21,
+  "estimated_mins": 8,
+  "scoring_type": "subscale",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [],
+    "note": "各分量表原始分×2换算为等量分后对照临界值",
+    "subscales": {
+      "depression": [
+        3,
+        5,
+        10,
+        13,
+        16,
+        17,
+        21
+      ],
+      "anxiety": [
+        2,
+        4,
+        7,
+        9,
+        15,
+        19,
+        20
+      ],
+      "stress": [
+        1,
+        6,
+        8,
+        11,
+        12,
+        14,
+        18
+      ]
+    }
+  },
+  "result_levels": [
+    {
+      "subscale": "depression",
+      "range": [
+        0,
+        9
+      ],
+      "level": "normal",
+      "label": "正常",
+      "alert": null
+    },
+    {
+      "subscale": "depression",
+      "range": [
+        10,
+        13
+      ],
+      "level": "mild",
+      "label": "轻度抑郁",
+      "alert": "yellow"
+    },
+    {
+      "subscale": "depression",
+      "range": [
+        14,
+        20
+      ],
+      "level": "moderate",
+      "label": "中度抑郁",
+      "alert": "orange"
+    },
+    {
+      "subscale": "depression",
+      "range": [
+        21,
+        27
+      ],
+      "level": "severe",
+      "label": "重度抑郁",
+      "alert": "red"
+    },
+    {
+      "subscale": "depression",
+      "range": [
+        28,
+        42
+      ],
+      "level": "extremely_severe",
+      "label": "极重度抑郁",
+      "alert": "red"
+    },
+    {
+      "subscale": "anxiety",
+      "range": [
+        0,
+        7
+      ],
+      "level": "normal",
+      "label": "正常",
+      "alert": null
+    },
+    {
+      "subscale": "anxiety",
+      "range": [
+        8,
+        9
+      ],
+      "level": "mild",
+      "label": "轻度焦虑",
+      "alert": "yellow"
+    },
+    {
+      "subscale": "anxiety",
+      "range": [
+        10,
+        14
+      ],
+      "level": "moderate",
+      "label": "中度焦虑",
+      "alert": "orange"
+    },
+    {
+      "subscale": "anxiety",
+      "range": [
+        15,
+        19
+      ],
+      "level": "severe",
+      "label": "重度焦虑",
+      "alert": "red"
+    },
+    {
+      "subscale": "anxiety",
+      "range": [
+        20,
+        42
+      ],
+      "level": "extremely_severe",
+      "label": "极重度焦虑",
+      "alert": "red"
+    },
+    {
+      "subscale": "stress",
+      "range": [
+        0,
+        14
+      ],
+      "level": "normal",
+      "label": "正常",
+      "alert": null
+    },
+    {
+      "subscale": "stress",
+      "range": [
+        15,
+        18
+      ],
+      "level": "mild",
+      "label": "轻度压力",
+      "alert": "yellow"
+    },
+    {
+      "subscale": "stress",
+      "range": [
+        19,
+        25
+      ],
+      "level": "moderate",
+      "label": "中度压力",
+      "alert": "orange"
+    },
+    {
+      "subscale": "stress",
+      "range": [
+        26,
+        33
+      ],
+      "level": "severe",
+      "label": "重度压力",
+      "alert": "red"
+    },
+    {
+      "subscale": "stress",
+      "range": [
+        34,
+        42
+      ],
+      "level": "extremely_severe",
+      "label": "极重度压力",
+      "alert": "red"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "我发现自己很难安抚下来",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "stress",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "我感到嘴巴干燥",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "我完全无法感受到积极的感受",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "depression",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "我感到呼吸困难（如呼吸过快、气短）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "我发现自己很难开始做事情",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "depression",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "我有过度反应的趋势",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "stress",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "我感到四肢颤抖",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "我感到很难放松",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "stress",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "我发现自己处于令人担忧的情况中却无法感受到任何情绪",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "depression",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "我觉得我对什么都没有期待",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "depression",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "我发现自己很容易烦躁不安",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "stress",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "我感到需要大量精力才能完成任务",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "stress",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "我感到悲伤和沮丧",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "depression",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "我发现对不得不等待的情况越来越没有耐心",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "stress",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "我感到头晕目眩",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 16,
+      "question_text": "我感到失去了做任何事情的热情",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "depression",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 17,
+      "question_text": "我感到自己一点价值都没有",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "depression",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 18,
+      "question_text": "我发现自己很容易烦恼",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "stress",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 19,
+      "question_text": "我感到心跳加速（非体力活动引起）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 20,
+      "question_text": "我无缘无故地感到害怕",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 21,
+      "question_text": "我感到生活没有任何意义",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本不符合我的情况",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "偶尔有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "相当符合，有相当一段时间有",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常符合，大多数时间都有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "depression",
+      "is_alert_item": false
+    }
+  ]
+}

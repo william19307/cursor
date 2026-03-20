@@ -1,0 +1,669 @@
+{
+  "name": "正念注意觉知量表",
+  "short_name": "MAAS",
+  "description": "评估日常对当下注意觉知能力的15题量表，所有题目反向计分（高分=高正念）。由Brown KW & Ryan RM 2003年编制，周仁来等中文版，α=0.89。",
+  "applicable_levels": [],
+  "question_count": 15,
+  "estimated_mins": 5,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "formula",
+    "formula": "mean = sum / 15; higher = more mindful",
+    "reverse_items": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        1.0,
+        2.99
+      ],
+      "level": "low",
+      "label": "正念水平较低",
+      "alert": "yellow",
+      "note": "均分"
+    },
+    {
+      "range": [
+        3.0,
+        4.49
+      ],
+      "level": "medium",
+      "label": "正念水平中等",
+      "alert": null,
+      "note": "均分"
+    },
+    {
+      "range": [
+        4.5,
+        6.0
+      ],
+      "level": "high",
+      "label": "正念水平较高",
+      "alert": null,
+      "note": "均分"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "在做某件事时，我可能感受到情绪困扰，但直到一段时间后才意识到这件事",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "很频繁",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "比较频繁",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "不太频繁",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "几乎从不",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "我不小心把东西打翻或把东西弄破",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "很频繁",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "比较频繁",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "不太频繁",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "几乎从不",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "我发现自己机械地完成任务，并不真正意识到我在做什么",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "很频繁",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "比较频繁",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "不太频繁",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "几乎从不",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "我很快速地从一地方移动到另一地方，不太在意一路上发生了什么",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "很频繁",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "比较频繁",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "不太频繁",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "几乎从不",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "我忽视身体的不适或紧绷感，因为我正专注于另外一件事情",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "很频繁",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "比较频繁",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "不太频繁",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "几乎从不",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "我忘了别人的名字，几乎是刚认识就忘了",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "很频繁",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "比较频繁",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "不太频繁",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "几乎从不",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "我好像是在用自动驾驶模式运作，并没有意识到自己在做什么",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "很频繁",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "比较频繁",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "不太频繁",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "几乎从不",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "我为了完成任务而冲冲忙忙，并不太注意任务本身",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "很频繁",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "比较频繁",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "不太频繁",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "几乎从不",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "我太专注于我想达成的目标，以致完全没注意到完成目标的当下",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "很频繁",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "比较频繁",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "不太频繁",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "几乎从不",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "我机械地做工作或任务，心思都在别处",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "很频繁",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "比较频繁",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "不太频繁",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "几乎从不",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "我发现自己在听别人说话时，同时也在做其他事",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "很频繁",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "比较频繁",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "不太频繁",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "几乎从不",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "我开车来到目的地，却不记得行经的路程",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "很频繁",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "比较频繁",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "不太频繁",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "几乎从不",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "我发现自己沉浸在过去或未来，而没有注意到现在",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "很频繁",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "比较频繁",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "不太频繁",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "几乎从不",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "我发现自己做事情心不在焉",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "很频繁",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "比较频繁",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "不太频繁",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "几乎从不",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "我进食时，并没有注意到自己在吃什么",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "很频繁",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "比较频繁",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "不太频繁",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "几乎从不",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}

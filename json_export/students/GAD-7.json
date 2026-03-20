@@ -1,0 +1,271 @@
+{
+  "name": "广泛性焦虑障碍量表",
+  "short_name": "GAD-7",
+  "description": "评估广泛性焦虑症状的7题自评量表，评估过去两周的症状频率。由Spitzer RL等2006年编制，Pfizer官方免费授权使用。",
+  "applicable_levels": [
+    2,
+    3
+  ],
+  "question_count": 7,
+  "estimated_mins": 3,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        4
+      ],
+      "level": "normal",
+      "label": "无焦虑",
+      "alert": null
+    },
+    {
+      "range": [
+        5,
+        9
+      ],
+      "level": "mild",
+      "label": "轻微焦虑",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        10,
+        14
+      ],
+      "level": "moderate",
+      "label": "中度焦虑",
+      "alert": "orange"
+    },
+    {
+      "range": [
+        15,
+        21
+      ],
+      "level": "severe",
+      "label": "重度焦虑",
+      "alert": "red"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "感觉紧张、焦虑或急切",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全不会",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几天",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "超过一半天数",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "几乎每天",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "不能够停止或控制担忧",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全不会",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几天",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "超过一半天数",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "几乎每天",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "对各种各样的事情担忧过多",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全不会",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几天",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "超过一半天数",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "几乎每天",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "很难放松下来",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全不会",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几天",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "超过一半天数",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "几乎每天",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "由于不安而无法静坐",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全不会",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几天",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "超过一半天数",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "几乎每天",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "变得容易烦恼或急躁",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全不会",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几天",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "超过一半天数",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "几乎每天",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "感到似乎将有可怕的事情发生而害怕",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全不会",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几天",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "超过一半天数",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "几乎每天",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}

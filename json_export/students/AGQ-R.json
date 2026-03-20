@@ -1,0 +1,592 @@
+{
+  "name": "成就目标问卷修订版",
+  "short_name": "AGQ-R",
+  "description": "评估学业成就目标四维度（掌握趋近/回避、成绩趋近/回避）的12题量表。由Elliot AJ & Murayama K 2008年编制，中文版α=0.83-0.92。",
+  "applicable_levels": [
+    2,
+    3
+  ],
+  "question_count": 12,
+  "estimated_mins": 5,
+  "scoring_type": "subscale",
+  "scoring_rule": {
+    "method": "formula",
+    "formula": "subscale_mean = subscale_sum / 3",
+    "reverse_items": [],
+    "subscales": {
+      "mastery_approach": [
+        1,
+        2,
+        3
+      ],
+      "mastery_avoidance": [
+        4,
+        5,
+        6
+      ],
+      "performance_approach": [
+        7,
+        8,
+        9
+      ],
+      "performance_avoidance": [
+        10,
+        11,
+        12
+      ]
+    },
+    "subscale_labels": {
+      "mastery_approach": "掌握趋近目标",
+      "mastery_avoidance": "掌握回避目标",
+      "performance_approach": "成绩趋近目标",
+      "performance_avoidance": "成绩回避目标"
+    }
+  },
+  "result_levels": [],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "本学期，我力争尽可能彻底地理解课程内容",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "mastery_approach",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "本学期，我的目标是尽可能多地学习",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "mastery_approach",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "本学期，我的目的是完全掌握本学期课程中呈现的材料",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "mastery_approach",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "本学期，我努力避免对课程材料理解不完整",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "mastery_avoidance",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "本学期，我努力避免学习少于我可能学到的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "mastery_avoidance",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "本学期，我的目标是避免学习少于可能学到的内容",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "mastery_avoidance",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "本学期，我的目标是表现得比其他学生更好",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "performance_approach",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "本学期，我的目的是在课程中相对于其他学生表现良好",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "performance_approach",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "我努力比其他学生表现得更好",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "performance_approach",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "本学期，我的目标是避免表现不好",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "performance_avoidance",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "本学期，我的目的是避免表现得比其他学生差",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "performance_avoidance",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "本学期，我努力避免表现得不好",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "performance_avoidance",
+      "is_alert_item": false
+    }
+  ]
+}

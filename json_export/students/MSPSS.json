@@ -1,0 +1,621 @@
+{
+  "name": "多维感知社会支持量表",
+  "short_name": "MSPSS",
+  "description": "评估来自重要他人、家庭和朋友三方面社会支持的12题量表。由Zimet GD等1988年编制，已在8-14岁儿童中验证适用。",
+  "applicable_levels": [
+    1,
+    2,
+    3
+  ],
+  "question_count": 12,
+  "estimated_mins": 5,
+  "scoring_type": "subscale",
+  "scoring_rule": {
+    "method": "formula",
+    "formula": "subscale_mean = subscale_sum / 4; total_mean = all_sum / 12",
+    "reverse_items": [],
+    "subscales": {
+      "significant_other": [
+        1,
+        2,
+        5,
+        10
+      ],
+      "family": [
+        3,
+        4,
+        8,
+        11
+      ],
+      "friends": [
+        6,
+        7,
+        9,
+        12
+      ]
+    },
+    "subscale_labels": {
+      "significant_other": "重要他人支持",
+      "family": "家庭支持",
+      "friends": "朋友支持"
+    }
+  },
+  "result_levels": [
+    {
+      "range": [
+        1.0,
+        2.99
+      ],
+      "level": "low",
+      "label": "社会支持不足",
+      "alert": "yellow",
+      "note": "各维度均分"
+    },
+    {
+      "range": [
+        3.0,
+        4.99
+      ],
+      "level": "medium",
+      "label": "社会支持一般",
+      "alert": null,
+      "note": "各维度均分"
+    },
+    {
+      "range": [
+        5.0,
+        7.0
+      ],
+      "level": "high",
+      "label": "社会支持充足",
+      "alert": null,
+      "note": "各维度均分"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "有一个特殊的人在我需要时出现在我身边",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常强烈不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "强烈不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "轻度不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "中立",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "轻度同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "强烈同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常强烈同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "significant_other",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "有一个特殊的人可以和我分享快乐和悲伤",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常强烈不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "强烈不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "轻度不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "中立",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "轻度同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "强烈同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常强烈同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "significant_other",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "我的家人真的尽力帮助我",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常强烈不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "强烈不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "轻度不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "中立",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "轻度同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "强烈同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常强烈同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "family",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "我从家人那里获得所需的情感帮助和支持",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常强烈不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "强烈不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "轻度不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "中立",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "轻度同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "强烈同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常强烈同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "family",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "有一个特殊的人对我是真正的安慰来源",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常强烈不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "强烈不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "轻度不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "中立",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "轻度同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "强烈同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常强烈同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "significant_other",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "我的朋友真的尽力帮助我",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常强烈不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "强烈不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "轻度不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "中立",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "轻度同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "强烈同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常强烈同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "friends",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "当事情出错时，我可以依靠我的朋友",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常强烈不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "强烈不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "轻度不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "中立",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "轻度同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "强烈同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常强烈同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "friends",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "我可以和我的家人谈论我的问题",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常强烈不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "强烈不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "轻度不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "中立",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "轻度同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "强烈同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常强烈同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "family",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "我有朋友可以和他们分享快乐和悲伤",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常强烈不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "强烈不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "轻度不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "中立",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "轻度同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "强烈同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常强烈同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "friends",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "我生命中有一个特殊的人关心我的感受",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常强烈不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "强烈不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "轻度不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "中立",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "轻度同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "强烈同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常强烈同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "significant_other",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "我的家人愿意帮我做决定",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常强烈不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "强烈不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "轻度不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "中立",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "轻度同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "强烈同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常强烈同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "family",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "我可以和我的朋友谈论我的问题",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常强烈不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "强烈不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "轻度不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "中立",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "轻度同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "强烈同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "非常强烈同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "friends",
+      "is_alert_item": false
+    }
+  ]
+}

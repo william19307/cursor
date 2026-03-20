@@ -1,0 +1,506 @@
+{
+  "name": "十项人格量表",
+  "short_name": "TIPI",
+  "description": "大五人格快速筛查的10题量表，每维度2题（一正一反），七级评分。由Gosling SD等2003年编制，α=0.61-0.73。",
+  "applicable_levels": [],
+  "question_count": 10,
+  "estimated_mins": 2,
+  "scoring_type": "subscale",
+  "scoring_rule": {
+    "method": "formula",
+    "formula": "each_dimension_mean = (forward_item + reversed_item) / 2",
+    "reverse_items": [
+      2,
+      6,
+      8,
+      9,
+      10
+    ],
+    "subscales": {
+      "E": [
+        1,
+        6
+      ],
+      "A": [
+        2,
+        7
+      ],
+      "C": [
+        3,
+        8
+      ],
+      "N": [
+        4,
+        9
+      ],
+      "O": [
+        5,
+        10
+      ]
+    },
+    "subscale_labels": {
+      "E": "外向性",
+      "A": "宜人性",
+      "C": "尽责性",
+      "N": "神经质",
+      "O": "开放性"
+    }
+  },
+  "result_levels": [],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "我是一个……的人（外向、热情）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "强烈不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "强烈同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "E",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "我是一个……的人（批判的、爱争辩的）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "强烈不同意",
+          "score": 7
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 6
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 5
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 3
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 2
+        },
+        {
+          "value": 7,
+          "label": "强烈同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "A",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "我是一个……的人（可靠的、自律的）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "强烈不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "强烈同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "C",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "我是一个……的人（焦虑的、容易沮丧的）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "强烈不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "强烈同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "N",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "我是一个……的人（对新经历开放、思维复杂）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "强烈不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "强烈同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "O",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "我是一个……的人（内向、安静）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "强烈不同意",
+          "score": 7
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 6
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 5
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 3
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 2
+        },
+        {
+          "value": 7,
+          "label": "强烈同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "E",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "我是一个……的人（亲切的、待人友好）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "强烈不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "强烈同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "A",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "我是一个……的人（凌乱的、粗心大意的）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "强烈不同意",
+          "score": 7
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 6
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 5
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 3
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 2
+        },
+        {
+          "value": 7,
+          "label": "强烈同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "C",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "我是一个……的人（情绪平静的、心理稳定的）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "强烈不同意",
+          "score": 7
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 6
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 5
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 3
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 2
+        },
+        {
+          "value": 7,
+          "label": "强烈同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "N",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "我是一个……的人（传统的、缺乏创意）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "强烈不同意",
+          "score": 7
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 6
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 5
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 3
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 2
+        },
+        {
+          "value": 7,
+          "label": "强烈同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "O",
+      "is_alert_item": false
+    }
+  ]
+}

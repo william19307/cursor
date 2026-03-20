@@ -1,0 +1,352 @@
+{
+  "name": "一般自我效能感量表",
+  "short_name": "GSES",
+  "description": "评估个体应对困境和挑战的整体自我效能感，10题单维度。由Schwarzer R & Jerusalem M 1993年编制，王才康等2001年中文版，α=0.87。",
+  "applicable_levels": [
+    2,
+    3
+  ],
+  "question_count": 10,
+  "estimated_mins": 5,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        10,
+        20
+      ],
+      "level": "low",
+      "label": "低自我效能感",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        21,
+        30
+      ],
+      "level": "medium",
+      "label": "中等自我效能感",
+      "alert": null
+    },
+    {
+      "range": [
+        31,
+        40
+      ],
+      "level": "high",
+      "label": "高自我效能感",
+      "alert": null
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "如果我尽力去做的话，我总是能够解决问题的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不正确",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有点正确",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "多数正确",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "完全正确",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "即使别人反对我，我仍有办法取得我所要的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不正确",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有点正确",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "多数正确",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "完全正确",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "对我来说，坚持理想和达成目标是轻而易举的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不正确",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有点正确",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "多数正确",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "完全正确",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "我自信能有效地应付任何突如其来的事情",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不正确",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有点正确",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "多数正确",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "完全正确",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "以我的才智，我定能应付意料之外的情况",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不正确",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有点正确",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "多数正确",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "完全正确",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "如果我付出必要的努力，我一定能解决大多数的难题",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不正确",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有点正确",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "多数正确",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "完全正确",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "我能冷静地面对困难，因为我信赖自己处理问题的能力",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不正确",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有点正确",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "多数正确",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "完全正确",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "面对一个难题时，我通常能找到几个解决方法",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不正确",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有点正确",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "多数正确",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "完全正确",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "有麻烦的时候，我通常能想到一些应付的方法",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不正确",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有点正确",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "多数正确",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "完全正确",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "无论什么事在我身上发生，我都能够应付自如",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不正确",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有点正确",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "多数正确",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "完全正确",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}

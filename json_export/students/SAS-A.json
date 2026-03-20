@@ -1,0 +1,712 @@
+{
+  "name": "青少年社交焦虑量表",
+  "short_name": "SAS-A",
+  "description": "评估11-17岁青少年社交焦虑的18题量表，含害怕否定评价、陌生和一般情境下社交回避三个因子。由La Greca AM & Lopez N 1998年编制，朱海东中文版，α=0.816。",
+  "applicable_levels": [
+    2,
+    3
+  ],
+  "question_count": 18,
+  "estimated_mins": 8,
+  "scoring_type": "both",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [],
+    "subscales": {
+      "fne": [
+        2,
+        5,
+        6,
+        7,
+        9,
+        11,
+        13,
+        14
+      ],
+      "sad_new": [
+        1,
+        3,
+        4,
+        8,
+        10,
+        16
+      ],
+      "sad_general": [
+        12,
+        15,
+        17,
+        18
+      ]
+    },
+    "subscale_labels": {
+      "fne": "害怕否定评价",
+      "sad_new": "陌生情境社交回避",
+      "sad_general": "一般情境社交回避"
+    }
+  },
+  "result_levels": [
+    {
+      "range": [
+        18,
+        45
+      ],
+      "level": "normal",
+      "label": "无明显社交焦虑",
+      "alert": null
+    },
+    {
+      "range": [
+        46,
+        60
+      ],
+      "level": "mild",
+      "label": "中度社交焦虑",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        61,
+        90
+      ],
+      "level": "severe",
+      "label": "明显社交焦虑",
+      "alert": "orange"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "我在别人面前做自己不熟悉的事情时会感到焦虑",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "sad_new",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "我害怕被别人耻笑打趣",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "fne",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "当我处于陌生人中间时，我会很害羞",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "sad_new",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "我只和我很熟悉的人交谈",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "sad_new",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "我感觉同龄人在背后谈论我",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "fne",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "我担心别人会怎么看我",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "fne",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "我害怕别人会不喜欢我",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "fne",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "当和不熟悉的同龄人交谈时我会很紧张",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "sad_new",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "我总担心别人会怎么评论我",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "fne",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "当我认识新朋友时总会很紧张",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "sad_new",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "我担心别人不喜欢我",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "fne",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "与一群人在一起时我总是保持沉默",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "sad_general",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "我总觉得别人在取笑我",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "fne",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "我认为如果我和别人争执的话，别人会不喜欢我",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "fne",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "我会因为害怕被拒绝而不愿意邀请别人同我一起做事",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "sad_general",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 16,
+      "question_text": "同某些人在一起时，我会感到紧张",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "sad_new",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 17,
+      "question_text": "即使与很熟悉的人在一起，我也会感到害羞",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "sad_general",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 18,
+      "question_text": "对我来说，邀请别人同我一起做事太难了",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "sad_general",
+      "is_alert_item": false
+    }
+  ]
+}

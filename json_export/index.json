@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "total": 59,
+    "generated_at": "2026-03-20",
+    "students": 34,
+    "adults": 22,
+    "teachers": 3,
+    "note": "applicable_levels: 1=小学 2=初中 3=高中; []=成人/教师量表"
+  },
+  "alert_levels": {
+    "red": "立即干预",
+    "orange": "高风险，尽快处理",
+    "yellow": "需关注",
+    "gray": "数据可能无效"
+  },
+  "scoring_types": {
+    "total": "单一总分",
+    "subscale": "仅子量表分",
+    "both": "总分+子量表分"
+  },
+  "scoring_methods": {
+    "sum": "直接求和",
+    "formula": "需公式计算（含换算/常模，is_active可能为false）",
+    "norm": "需参照常模（is_active=false）"
+  },
+  "students": [
+    "PHQ-9.json","GAD-7.json","DASS-21.json","SAS.json","SDS.json",
+    "SCL-90.json","MHT.json","MSSMHS.json","SCARED.json","CDI.json","SDQ.json",
+    "GSES.json","Grit-S.json","MLQ.json","GQ-6.json","PANAS.json","CAMM.json",
+    "ERQ.json","SWLS.json","BSCS.json","AGQ-R.json","PSS-10.json",
+    "SASC.json","SAS-A.json","MSPSS.json","PSQI.json","RRS.json",
+    "TAI.json","SES.json","PTGI.json","PACS.json","CLS.json","CSES.json","SCS-SF.json"
+  ],
+  "adults": [
+    "ISI.json","ESS.json","DBAS-16.json",
+    "BDI-II.json","GDS-15.json",
+    "BAI.json","GHQ-12.json","WHO-5.json",
+    "MAAS.json","CFQ.json","LOT-R.json",
+    "UCLA-LS.json","TIPI.json",
+    "PCL-5.json","ACEs.json",
+    "AUDIT.json","OCI-R.json","BHS.json",
+    "WHOQOL-BREF.json","PSS-14.json",
+    "MMSE.json","MoCA.json"
+  ],
+  "teachers": [
+    "MBI-ES.json","TSES.json","UWES.json"
+  ],
+  "inactive_scales": ["MMSE.json","MoCA.json","WHOQOL-BREF.json"],
+  "crisis_alert_scales": ["PHQ-9.json","SDS.json","CDI.json","BDI-II.json","BHS.json","MHT.json","MSSMHS.json","SCL-90.json","PCL-5.json","ACEs.json"]
+}

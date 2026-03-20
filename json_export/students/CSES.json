@@ -1,0 +1,479 @@
+{
+  "name": "核心自我评价量表",
+  "short_name": "CSES",
+  "description": "评估个体核心自我评价（自尊、效能、控制点、情绪稳定性综合）的12题量表。由Judge TA等2003年编制，中文版α=0.70-0.78。",
+  "applicable_levels": [
+    2,
+    3
+  ],
+  "question_count": 12,
+  "estimated_mins": 5,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        12,
+        30
+      ],
+      "level": "low",
+      "label": "核心自我评价偏低",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        31,
+        45
+      ],
+      "level": "moderate",
+      "label": "核心自我评价中等",
+      "alert": null
+    },
+    {
+      "range": [
+        46,
+        60
+      ],
+      "level": "high",
+      "label": "核心自我评价较高",
+      "alert": null
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "我坚信自己能够取得应有的成功",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "同意",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "有时候我会感到沮丧",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "同意",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "只要我努力尝试，我总能取得成功",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "同意",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "有时候，当我失败了，我会觉得自己很没用",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "同意",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "我总能很出色地完成任务",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "同意",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "有时候，我感觉自己很难掌控自己的工作",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "同意",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "总体而言，我对自己很满意",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "同意",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "我对自己的能力总是充满怀疑",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "同意",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "我自己能够决定我的生活",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "同意",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "事业上的成功不由我控制",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "同意",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "我能够很好地处理好自己绝大部分的问题",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "同意",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "有些时候，我会觉得事情变得没有希望",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不同意",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "不确定",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "同意",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "非常同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}

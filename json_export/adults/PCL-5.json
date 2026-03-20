@@ -1,0 +1,791 @@
+{
+  "name": "PTSD检查表（DSM-5版）",
+  "short_name": "PCL-5",
+  "description": "评估PTSD症状严重程度的20题量表，评估过去一个月。由美国退伍军人事务部2013年编制，α=0.90+。",
+  "applicable_levels": [],
+  "question_count": 20,
+  "estimated_mins": 8,
+  "scoring_type": "both",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [],
+    "subscales": {
+      "re_experiencing": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "avoidance": [
+        6,
+        7
+      ],
+      "negative_cognition": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "hyperarousal": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "subscale_labels": {
+      "re_experiencing": "再体验",
+      "avoidance": "回避",
+      "negative_cognition": "认知与情绪负性改变",
+      "hyperarousal": "过度警觉"
+    }
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        32
+      ],
+      "level": "normal",
+      "label": "PTSD可能性较低",
+      "alert": null
+    },
+    {
+      "range": [
+        33,
+        49
+      ],
+      "level": "possible",
+      "label": "可能存在PTSD",
+      "alert": "orange"
+    },
+    {
+      "range": [
+        50,
+        80
+      ],
+      "level": "likely",
+      "label": "高度可能PTSD",
+      "alert": "red"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": [
+      {
+        "question_no": 16,
+        "condition": "value >= 2",
+        "alert": "red",
+        "reason": "危险或自我毁灭行为"
+      }
+    ]
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "对创伤性经历反复出现、不受控的痛苦记忆",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一点",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等程度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极其严重",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "re_experiencing",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "关于创伤性经历的反复痛苦梦境",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一点",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等程度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极其严重",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "re_experiencing",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "突然感到或表现得好像创伤性经历又在发生（闪回）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一点",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等程度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极其严重",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "re_experiencing",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "当有事物提醒您时，感到非常难过",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一点",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等程度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极其严重",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "re_experiencing",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "当有事物提醒您时，有强烈的生理反应（如心跳加速）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一点",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等程度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极其严重",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "re_experiencing",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "回避关于创伤性经历的记忆、想法或感受",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一点",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等程度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极其严重",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "avoidance",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "回避可能提醒您创伤性经历的外部线索",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一点",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等程度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极其严重",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "avoidance",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "无法记住创伤性经历的重要方面",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一点",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等程度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极其严重",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "negative_cognition",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "对自己、他人或世界持有强烈的负性信念",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一点",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等程度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极其严重",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "negative_cognition",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "因创伤性经历而自责或责备他人",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一点",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等程度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极其严重",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "negative_cognition",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "强烈的负性情绪（如恐惧、恐怖、愤怒、内疚或羞耻）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一点",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等程度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极其严重",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "negative_cognition",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "对以前喜欢的活动不再感兴趣",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一点",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等程度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极其严重",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "negative_cognition",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "感到与他人疏远或脱节",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一点",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等程度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极其严重",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "negative_cognition",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "无法体验积极情绪（无法感到快乐、爱或满足）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一点",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等程度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极其严重",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "negative_cognition",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "易激惹的行为和愤怒爆发",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一点",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等程度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极其严重",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "hyperarousal",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 16,
+      "question_text": "做危险或自我毁灭的事情",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一点",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等程度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极其严重",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "hyperarousal",
+      "is_alert_item": true
+    },
+    {
+      "question_no": 17,
+      "question_text": "过度警觉或保持警惕",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一点",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等程度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极其严重",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "hyperarousal",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 18,
+      "question_text": "容易受到惊吓",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一点",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等程度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极其严重",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "hyperarousal",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 19,
+      "question_text": "注意力集中困难",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一点",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等程度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极其严重",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "hyperarousal",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 20,
+      "question_text": "睡眠困难",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一点",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等程度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极其严重",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "hyperarousal",
+      "is_alert_item": false
+    }
+  ]
+}

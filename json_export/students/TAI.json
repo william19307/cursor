@@ -1,0 +1,1051 @@
+{
+  "name": "考试焦虑测验",
+  "short_name": "TAI",
+  "description": "评估中学生考试焦虑程度的33题量表，含忧虑和情绪两维度。原版由Spielberger CD 1980年编制，中文33题版广泛使用。",
+  "applicable_levels": [
+    2,
+    3
+  ],
+  "question_count": 33,
+  "estimated_mins": 10,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        24
+      ],
+      "level": "normal",
+      "label": "镇定自若",
+      "alert": null
+    },
+    {
+      "range": [
+        25,
+        49
+      ],
+      "level": "mild",
+      "label": "轻度焦虑",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        50,
+        74
+      ],
+      "level": "moderate",
+      "label": "中度焦虑",
+      "alert": "orange"
+    },
+    {
+      "range": [
+        75,
+        99
+      ],
+      "level": "severe",
+      "label": "重度焦虑",
+      "alert": "red"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "在重要的考试前几天，我就坐立不安了",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "临近考试时，我就泻肚子了",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "一想到考试即将来临，身体就会发僵",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "在考试前，我总感到苦恼",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "在考试前，我感到烦躁，脾气变坏",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "在紧张的复习期间，常会想到：这次考试要是得到个坏分数怎么办？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "越临近考试，我的注意力越难集中",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "一想到马上就要考试了，参加任何文娱活动都感到没劲",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "在考试前，我总预感到这次考试将要考坏",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "在考试前，我常做关于考试的梦",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "到了考试那天，我就不安起来",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "当听到开始考试的铃声响了，我的心马上紧张地急跳起来",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "遇到重要的考试，我的脑子就变得比平时迟钝",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "看到考试题目越多、越难，我就越感到不安",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "在考试中，我的手会变得冰凉",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 16,
+      "question_text": "在考试时，我感到十分紧张",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 17,
+      "question_text": "一遇到很难的考试，我就担心自己会不及格",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 18,
+      "question_text": "在紧张的考试中，我却会想些与考试无关的事情，注意力集中不起来",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 19,
+      "question_text": "在考试时，我会紧张得连平时记得滚瓜烂熟的知识也回忆不起来",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 20,
+      "question_text": "在考试时，我会沉浸在空想之中，一时忘了自己是在考试",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 21,
+      "question_text": "考试时，我想上厕所的次数比平时多",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 22,
+      "question_text": "考试时，即使不热，我也会浑身出汗",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 23,
+      "question_text": "在考试时，我紧张得手发僵，写字不流畅",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 24,
+      "question_text": "考试时，我经常会看错题目",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 25,
+      "question_text": "在进行重要的考试时，我的头就会痛起来",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 26,
+      "question_text": "发现剩下的时间来不及做完全部考题，我就急得手足无措、浑身大汗",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 27,
+      "question_text": "如果我考了个坏分数，家长或老师会严厉地指责我",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 28,
+      "question_text": "在考试后，发现自己会做的题目没有答对时，就十分生自己的气",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 29,
+      "question_text": "有几次在重要的考试之后，我腹泻了",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 30,
+      "question_text": "我对考试十分厌烦",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 31,
+      "question_text": "只要考试不计成绩，我就会喜欢考试",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 32,
+      "question_text": "考试不应当像现在这样的紧张状态下进行",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 33,
+      "question_text": "不考试，我能学到更多的知识",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "D（很不符合）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "C（不太符合）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "B（比较符合）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "A（很符合）",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}

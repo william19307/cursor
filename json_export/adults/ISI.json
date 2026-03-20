@@ -1,0 +1,303 @@
+{
+  "name": "失眠严重程度指数量表",
+  "short_name": "ISI",
+  "description": "评估成人失眠严重程度的7题量表，评估过去两周症状。由Morin CM等1993/2011年编制，α=0.74-0.83。",
+  "applicable_levels": [],
+  "question_count": 7,
+  "estimated_mins": 3,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        7
+      ],
+      "level": "none",
+      "label": "无临床意义失眠",
+      "alert": null
+    },
+    {
+      "range": [
+        8,
+        14
+      ],
+      "level": "subthreshold",
+      "label": "轻度失眠",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        15,
+        21
+      ],
+      "level": "moderate",
+      "label": "中度失眠",
+      "alert": "orange"
+    },
+    {
+      "range": [
+        22,
+        28
+      ],
+      "level": "severe",
+      "label": "重度失眠",
+      "alert": "red"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "入睡困难的严重程度",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极重度",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "维持睡眠困难（夜间醒来）的严重程度",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极重度",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "早醒问题的严重程度",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极重度",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "您对目前睡眠模式的满意程度",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "非常满意",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "满意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中等",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "不满意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "非常不满意",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "睡眠问题对日常功能（如疲乏、情绪、工作）的影响程度",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻微",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "极大影响",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "您对睡眠问题的担心/苦恼程度",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻微",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "非常",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "他人观察到您的睡眠问题影响生活质量的程度",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻微",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "非常",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}

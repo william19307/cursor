@@ -1,0 +1,847 @@
+{
+  "name": "Utrecht工作投入量表",
+  "short_name": "UWES",
+  "description": "评估工作投入的活力、奉献和专注三维度，17题七级评分。由Schaufeli WB等2002年编制，中文版学术发表。",
+  "applicable_levels": [],
+  "question_count": 17,
+  "estimated_mins": 8,
+  "scoring_type": "subscale",
+  "scoring_rule": {
+    "method": "formula",
+    "formula": "subscale_mean = subscale_sum / n_items",
+    "reverse_items": [],
+    "subscales": {
+      "vigor": [
+        1,
+        4,
+        8,
+        12,
+        15,
+        17
+      ],
+      "dedication": [
+        2,
+        5,
+        7,
+        10,
+        13
+      ],
+      "absorption": [
+        3,
+        6,
+        9,
+        11,
+        14,
+        16
+      ]
+    },
+    "subscale_labels": {
+      "vigor": "活力",
+      "dedication": "奉献",
+      "absorption": "专注"
+    }
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        2.99
+      ],
+      "level": "low",
+      "label": "工作投入度低",
+      "alert": "yellow",
+      "note": "各维度均分"
+    },
+    {
+      "range": [
+        3.0,
+        4.49
+      ],
+      "level": "moderate",
+      "label": "工作投入度中等",
+      "alert": null,
+      "note": "各维度均分"
+    },
+    {
+      "range": [
+        4.5,
+        6.0
+      ],
+      "level": "high",
+      "label": "工作投入度高",
+      "alert": null,
+      "note": "各维度均分"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "在工作中，我感到自己精力充沛",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不（0）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎没有，一年几次（1）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时，一月几次（2）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常，每月几次（3）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很经常，每周几次（4）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是，每天（5）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "总是，每天数次（6）",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "vigor",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "我认为我的工作很有意义和价值",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不（0）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎没有，一年几次（1）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时，一月几次（2）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常，每月几次（3）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很经常，每周几次（4）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是，每天（5）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "总是，每天数次（6）",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "dedication",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "时间在工作中飞速流逝",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不（0）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎没有，一年几次（1）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时，一月几次（2）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常，每月几次（3）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很经常，每周几次（4）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是，每天（5）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "总是，每天数次（6）",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "absorption",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "在工作中，我感到自己强健而充满活力",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不（0）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎没有，一年几次（1）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时，一月几次（2）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常，每月几次（3）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很经常，每周几次（4）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是，每天（5）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "总是，每天数次（6）",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "vigor",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "我对自己所从事的工作充满热情",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不（0）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎没有，一年几次（1）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时，一月几次（2）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常，每月几次（3）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很经常，每周几次（4）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是，每天（5）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "总是，每天数次（6）",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "dedication",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "当我工作时，我会忘记周围的一切",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不（0）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎没有，一年几次（1）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时，一月几次（2）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常，每月几次（3）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很经常，每周几次（4）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是，每天（5）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "总是，每天数次（6）",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "absorption",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "我的工作给我带来鼓舞和激励",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不（0）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎没有，一年几次（1）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时，一月几次（2）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常，每月几次（3）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很经常，每周几次（4）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是，每天（5）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "总是，每天数次（6）",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "dedication",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "早晨起来，我感到很想去工作",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不（0）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎没有，一年几次（1）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时，一月几次（2）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常，每月几次（3）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很经常，每周几次（4）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是，每天（5）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "总是，每天数次（6）",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "vigor",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "当我工作非常投入时，我感到很愉悦",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不（0）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎没有，一年几次（1）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时，一月几次（2）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常，每月几次（3）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很经常，每周几次（4）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是，每天（5）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "总是，每天数次（6）",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "absorption",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "我为从事这份工作而感到自豪",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不（0）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎没有，一年几次（1）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时，一月几次（2）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常，每月几次（3）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很经常，每周几次（4）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是，每天（5）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "总是，每天数次（6）",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "dedication",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "我完全投入到工作中",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不（0）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎没有，一年几次（1）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时，一月几次（2）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常，每月几次（3）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很经常，每周几次（4）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是，每天（5）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "总是，每天数次（6）",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "absorption",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "在工作中，我能坚持，即使事情进展不顺利",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不（0）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎没有，一年几次（1）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时，一月几次（2）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常，每月几次（3）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很经常，每周几次（4）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是，每天（5）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "总是，每天数次（6）",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "vigor",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "我的工作是富于挑战性的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不（0）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎没有，一年几次（1）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时，一月几次（2）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常，每月几次（3）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很经常，每周几次（4）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是，每天（5）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "总是，每天数次（6）",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "dedication",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "在工作时，我很难使自己分心",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不（0）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎没有，一年几次（1）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时，一月几次（2）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常，每月几次（3）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很经常，每周几次（4）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是，每天（5）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "总是，每天数次（6）",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "absorption",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "在工作中，我的意志很坚强",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不（0）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎没有，一年几次（1）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时，一月几次（2）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常，每月几次（3）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很经常，每周几次（4）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是，每天（5）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "总是，每天数次（6）",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "vigor",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 16,
+      "question_text": "很难从工作中分离出来",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不（0）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎没有，一年几次（1）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时，一月几次（2）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常，每月几次（3）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很经常，每周几次（4）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是，每天（5）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "总是，每天数次（6）",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "absorption",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 17,
+      "question_text": "在工作中，我总是坚持不懈，即使事情不顺利",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不（0）",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎没有，一年几次（1）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时，一月几次（2）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常，每月几次（3）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很经常，每周几次（4）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "几乎总是，每天（5）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "总是，每天数次（6）",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "vigor",
+      "is_alert_item": false
+    }
+  ]
+}

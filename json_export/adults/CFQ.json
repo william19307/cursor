@@ -1,0 +1,364 @@
+{
+  "name": "认知融合问卷",
+  "short_name": "CFQ",
+  "description": "评估对想法过度认同和融合程度的7题量表（ACT接受承诺疗法核心概念）。由Gillanders DT等2014年编制，α=0.94。",
+  "applicable_levels": [],
+  "question_count": 7,
+  "estimated_mins": 3,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        7,
+        20
+      ],
+      "level": "low",
+      "label": "认知融合程度低",
+      "alert": null
+    },
+    {
+      "range": [
+        21,
+        35
+      ],
+      "level": "moderate",
+      "label": "中等认知融合",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        36,
+        49
+      ],
+      "level": "high",
+      "label": "认知融合程度高",
+      "alert": "orange"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "我的想法给我的生活造成了很多困扰",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常经常",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "总是",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "我与我的想法纠缠在一起",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常经常",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "总是",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "在面对困难的想法和感受时，我很难做到我最在乎的事",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常经常",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "总是",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "我很难与令人不安的想法和感受保持距离",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常经常",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "总是",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "我与我的想法融为一体",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常经常",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "总是",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "我花了很多精力与我的想法和感受斗争",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常经常",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "总是",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "与我的想法斗争阻止了我活在当下",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常经常",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "几乎总是",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "总是",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}

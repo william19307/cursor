@@ -1,0 +1,723 @@
+{
+  "name": "长处和困难问卷（学生自评版）",
+  "short_name": "SDQ",
+  "description": "评估11-16岁儿童青少年行为情绪特点的25题量表，兼顾问题与优势。由Goodman R 1997年编制，sdqinfo.org提供简体中文版。",
+  "applicable_levels": [
+    2,
+    3
+  ],
+  "question_count": 25,
+  "estimated_mins": 7,
+  "scoring_type": "both",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [
+      7,
+      11,
+      14,
+      21,
+      25
+    ],
+    "subscales": {
+      "emotional": [
+        3,
+        8,
+        13,
+        16,
+        24
+      ],
+      "conduct": [
+        5,
+        7,
+        12,
+        18,
+        22
+      ],
+      "hyperactivity": [
+        2,
+        10,
+        15,
+        21,
+        25
+      ],
+      "peer": [
+        6,
+        11,
+        14,
+        19,
+        23
+      ],
+      "prosocial": [
+        1,
+        4,
+        9,
+        17,
+        20
+      ]
+    },
+    "note": "困难总分=情绪+品行+多动+同伴（不含亲社会）"
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        13
+      ],
+      "level": "normal",
+      "label": "正常",
+      "alert": null,
+      "note": "困难总分"
+    },
+    {
+      "range": [
+        14,
+        16
+      ],
+      "level": "borderline",
+      "label": "临界状态",
+      "alert": "yellow",
+      "note": "困难总分"
+    },
+    {
+      "range": [
+        17,
+        40
+      ],
+      "level": "abnormal",
+      "label": "异常",
+      "alert": "orange",
+      "note": "困难总分"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "体贴别人的感受",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "prosocial",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "坐立不安，多动，不能长时间安静",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "hyperactivity",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "经常头疼、肚子疼或不舒服",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "emotional",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "愿意和他人分享（食物、游戏等）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "prosocial",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "常常发脾气",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "conduct",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "比较孤僻，倾向于独处",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "peer",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "总体上乖顺听话，大人让做的事基本能照做",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 2
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "conduct",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "担心很多，经常担忧",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "emotional",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "如果有人受伤、沮丧或者感到不适，愿意帮助",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "prosocial",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "不断动来动去，坐立不安",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "hyperactivity",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "有一个或几个好朋友",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 2
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "peer",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "经常与其他小孩打架，或者欺负他们",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "conduct",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "经常不开心，情绪低落，或者哭泣",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "emotional",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "总体上被其他小孩所喜欢",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 2
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "peer",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "容易分心，不能集中注意力",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "hyperactivity",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 16,
+      "question_text": "在新环境中感到紧张，容易失去自信",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "emotional",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 17,
+      "question_text": "善待年纪比自己小的孩子",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "prosocial",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 18,
+      "question_text": "常说谎或者欺骗他人",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "conduct",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 19,
+      "question_text": "被其他小孩欺负或虐待",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "peer",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 20,
+      "question_text": "经常主动帮助别人",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "prosocial",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 21,
+      "question_text": "做事之前先想想",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 2
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "hyperactivity",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 22,
+      "question_text": "从家里、学校或其他地方偷东西",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "conduct",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 23,
+      "question_text": "和大人相处比和小孩相处好",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "peer",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 24,
+      "question_text": "有很多害怕的事情，容易感到害怕",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "emotional",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 25,
+      "question_text": "能把任务坚持完成，注意力持久",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "不符合",
+          "score": 2
+        },
+        {
+          "value": 1,
+          "label": "有些符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全符合",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "hyperactivity",
+      "is_alert_item": false
+    }
+  ]
+}

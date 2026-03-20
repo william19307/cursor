@@ -1,0 +1,326 @@
+{
+  "name": "感恩问卷",
+  "short_name": "GQ-6",
+  "description": "评估个体感恩倾向的6题量表，七级评分。由McCullough ME等2002年编制，刘建榕等中文版，α=0.82。",
+  "applicable_levels": [
+    1,
+    2,
+    3
+  ],
+  "question_count": 6,
+  "estimated_mins": 3,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [
+      3,
+      6
+    ],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        6,
+        24
+      ],
+      "level": "low",
+      "label": "感恩倾向较低",
+      "alert": null
+    },
+    {
+      "range": [
+        25,
+        36
+      ],
+      "level": "medium",
+      "label": "感恩倾向中等",
+      "alert": null
+    },
+    {
+      "range": [
+        37,
+        42
+      ],
+      "level": "high",
+      "label": "感恩倾向较高",
+      "alert": null
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "我生命中有太多我觉得要感谢的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "轻度不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "轻度同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "完全同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "如果我列出我觉得要感谢的，那将会是很长一串",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "轻度不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "轻度同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "完全同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "当我环顾这个世界时，我看不出有多少值得我感谢",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不同意",
+          "score": 7
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 6
+        },
+        {
+          "value": 3,
+          "label": "轻度不同意",
+          "score": 5
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "轻度同意",
+          "score": 3
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 2
+        },
+        {
+          "value": 7,
+          "label": "完全同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "我要感谢各种各样的人",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "轻度不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "轻度同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "完全同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "随着年龄的增长，我发现自己越来越能够欣赏那些构成我人生经历的人、事和情景",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "轻度不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "轻度同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "完全同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "要我说出要感谢什么人或什么事，通常要花很长的时间才能想出来",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不同意",
+          "score": 7
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 6
+        },
+        {
+          "value": 3,
+          "label": "轻度不同意",
+          "score": 5
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "轻度同意",
+          "score": 3
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 2
+        },
+        {
+          "value": 7,
+          "label": "完全同意",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}

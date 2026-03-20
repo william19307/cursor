@@ -1,0 +1,289 @@
+{
+  "name": "爱普沃斯嗜睡量表",
+  "short_name": "ESS",
+  "description": "评估白天嗜睡程度的8题量表，由澳大利亚Epworth医院设计。中文版α=0.82。",
+  "applicable_levels": [],
+  "question_count": 8,
+  "estimated_mins": 3,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        10
+      ],
+      "level": "normal",
+      "label": "正常",
+      "alert": null
+    },
+    {
+      "range": [
+        11,
+        15
+      ],
+      "level": "mild",
+      "label": "过度嗜睡",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        16,
+        24
+      ],
+      "level": "severe",
+      "label": "严重嗜睡",
+      "alert": "red"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "坐着阅读书刊时",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不打瞌睡",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度可能打瞌睡",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度可能打瞌睡",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很可能打瞌睡",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "看电视时",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不打瞌睡",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度可能打瞌睡",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度可能打瞌睡",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很可能打瞌睡",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "在公共场所安静地坐着（如剧场、会议）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不打瞌睡",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度可能打瞌睡",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度可能打瞌睡",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很可能打瞌睡",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "连续乘坐汽车1小时（无间断）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不打瞌睡",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度可能打瞌睡",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度可能打瞌睡",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很可能打瞌睡",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "条件允许的情况下，下午躺下休息时",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不打瞌睡",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度可能打瞌睡",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度可能打瞌睡",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很可能打瞌睡",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "坐着与人谈话时",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不打瞌睡",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度可能打瞌睡",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度可能打瞌睡",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很可能打瞌睡",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "未饮酒的午餐后安静地坐着",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不打瞌睡",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度可能打瞌睡",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度可能打瞌睡",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很可能打瞌睡",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "遇到堵车，在停车的几分钟里",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不打瞌睡",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度可能打瞌睡",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度可能打瞌睡",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很可能打瞌睡",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}

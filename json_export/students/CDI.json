@@ -1,0 +1,754 @@
+{
+  "name": "儿童抑郁量表",
+  "short_name": "CDI",
+  "description": "评估7-17岁儿童青少年抑郁症状的27题自评量表，每题从三个陈述中选最符合的。由Kovacs M 1992年编制，中文版学术发表。",
+  "applicable_levels": [
+    1,
+    2,
+    3
+  ],
+  "question_count": 27,
+  "estimated_mins": 15,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [
+      7,
+      13
+    ],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        12
+      ],
+      "level": "normal",
+      "label": "无抑郁症状",
+      "alert": null,
+      "note": "6-8岁阈值13，9-12岁阈值17，12+阈值19"
+    },
+    {
+      "range": [
+        13,
+        19
+      ],
+      "level": "mild",
+      "label": "轻度抑郁倾向",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        20,
+        29
+      ],
+      "level": "moderate",
+      "label": "中度抑郁倾向",
+      "alert": "orange"
+    },
+    {
+      "range": [
+        30,
+        54
+      ],
+      "level": "severe",
+      "label": "重度抑郁倾向",
+      "alert": "red"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": [
+      {
+        "question_no": 9,
+        "condition": "value >= 1",
+        "alert": "red",
+        "reason": "自杀意念题"
+      },
+      {
+        "question_no": 22,
+        "condition": "value >= 1",
+        "alert": "red",
+        "reason": "自伤想法题"
+      }
+    ]
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "悲伤情绪",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "偶尔感到难过",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "经常感到难过",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "总是感到难过",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "对未来的看法",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "对未来不悲观",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "对未来感到悲观",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "未来没有希望，只会变得更糟",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "自我评价失败感",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "大多数事情做得很好",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "许多事情做得不对",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "做的每件事情都不对",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "失去乐趣",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "有很多乐趣",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有一些乐趣",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "没有任何乐趣",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "自责感",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "大多数时候不坏",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时候很坏",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "总是很坏",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "对未来担忧",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "有时想到坏事会发生",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "担忧坏事会发生",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "确信可怕的事情会发生",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "自我否定",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "喜欢自己",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "不喜欢自己",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "讨厌自己",
+          "score": 2
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "自责",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "不觉得自己对任何不好的事情负责",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "许多不好的事情是自己的错",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "所有不好的事情都是自己的错",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "自杀意念",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "不想杀死自己",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "想杀死自己但不会这样做",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "想杀死自己",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": true
+    },
+    {
+      "question_no": 10,
+      "question_text": "哭泣",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "偶尔感到哭泣",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "许多天感到哭泣",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "每天都感到哭泣",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "烦恼",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "很少令我烦恼",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时令我烦恼",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "总是令我烦恼",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "社交回避",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "喜欢与他人在一起",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "经常不喜欢与他人在一起",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "根本不喜欢与他人在一起",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "对学校的态度",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "喜欢上学",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "不确定是否喜欢上学",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不喜欢上学",
+          "score": 2
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "睡眠",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "睡得很好",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时难以入睡",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常难以入睡",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "疲劳",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "有时感到疲倦",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "经常感到疲倦",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "总是感到疲倦",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 16,
+      "question_text": "孤独",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "大多数时候不感到孤独",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时感到孤独",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常感到孤独",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 17,
+      "question_text": "郁闷",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "有时不开心",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "经常不开心",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "从来没有开心过",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 18,
+      "question_text": "无聊",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "不感到烦闷",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时感到烦闷",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常感到烦闷",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 19,
+      "question_text": "食欲",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "胃口很好",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "胃口有时不好",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "胃口总是不好",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 20,
+      "question_text": "身体疼痛",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "身体没有疼痛",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时感到身体疼痛",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常感到身体疼痛",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 21,
+      "question_text": "孤立无援",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "不感到孤立无援",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "经常感到孤立无援",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "总是感到孤立无援",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 22,
+      "question_text": "自伤想法",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "从来没有想过伤害自己",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时想伤害自己但不会这样做",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "想伤害自己",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": true
+    },
+    {
+      "question_no": 23,
+      "question_text": "完成作业",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "照常做作业",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "做作业比以前难",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "完全不能做作业",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 24,
+      "question_text": "学业成绩",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "成绩和以前一样好",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "成绩没有以前好",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "在学业上表现很差",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 25,
+      "question_text": "听话",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "和以前一样听话",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "不如以前听话",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "一点都不听话",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 26,
+      "question_text": "与同伴相处",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "和别的孩子相处融洽",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时相处不好",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "根本相处不好",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 27,
+      "question_text": "被照顾感",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "觉得有人照顾我",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "不确定是否有人照顾我",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "觉得没有人照顾我",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}

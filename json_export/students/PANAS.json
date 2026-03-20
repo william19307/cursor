@@ -1,0 +1,814 @@
+{
+  "name": "正性负性情绪量表",
+  "short_name": "PANAS",
+  "description": "评估积极和消极情感状态的20题量表，描述近1-2周内的情绪。由Watson D等1988年编制，黄丽等2003年中文版。",
+  "applicable_levels": [
+    2,
+    3
+  ],
+  "question_count": 20,
+  "estimated_mins": 5,
+  "scoring_type": "subscale",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [],
+    "subscales": {
+      "positive": [
+        1,
+        3,
+        5,
+        9,
+        10,
+        12,
+        14,
+        16,
+        17,
+        19
+      ],
+      "negative": [
+        2,
+        4,
+        6,
+        7,
+        8,
+        11,
+        13,
+        15,
+        18,
+        20
+      ]
+    },
+    "subscale_labels": {
+      "positive": "正性情绪（PA）",
+      "negative": "负性情绪（NA）"
+    }
+  },
+  "result_levels": [
+    {
+      "subscale": "positive",
+      "range": [
+        10,
+        24
+      ],
+      "level": "low",
+      "label": "正性情绪偏低",
+      "alert": "yellow"
+    },
+    {
+      "subscale": "positive",
+      "range": [
+        25,
+        35
+      ],
+      "level": "medium",
+      "label": "正性情绪中等",
+      "alert": null
+    },
+    {
+      "subscale": "positive",
+      "range": [
+        36,
+        50
+      ],
+      "level": "high",
+      "label": "正性情绪较高",
+      "alert": null
+    },
+    {
+      "subscale": "negative",
+      "range": [
+        10,
+        19
+      ],
+      "level": "low",
+      "label": "负性情绪较少",
+      "alert": null
+    },
+    {
+      "subscale": "negative",
+      "range": [
+        20,
+        30
+      ],
+      "level": "medium",
+      "label": "负性情绪中等",
+      "alert": "yellow"
+    },
+    {
+      "subscale": "negative",
+      "range": [
+        31,
+        50
+      ],
+      "level": "high",
+      "label": "负性情绪较多",
+      "alert": "orange"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "感兴趣的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎没有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比较少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "极其多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "positive",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "心烦的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎没有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比较少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "极其多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "negative",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "精神活力高的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎没有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比较少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "极其多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "positive",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "心神不宁的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎没有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比较少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "极其多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "negative",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "劲头足的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎没有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比较少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "极其多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "positive",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "内疚的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎没有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比较少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "极其多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "negative",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "恐惧的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎没有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比较少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "极其多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "negative",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "充满敌意的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎没有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比较少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "极其多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "negative",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "充满热情的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎没有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比较少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "极其多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "positive",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "自豪的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎没有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比较少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "极其多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "positive",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "易怒的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎没有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比较少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "极其多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "negative",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "警觉性高的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎没有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比较少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "极其多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "positive",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "羞愧的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎没有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比较少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "极其多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "negative",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "备受鼓舞的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎没有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比较少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "极其多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "positive",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "紧张的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎没有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比较少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "极其多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "negative",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 16,
+      "question_text": "意志坚定的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎没有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比较少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "极其多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "positive",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 17,
+      "question_text": "注意力集中的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎没有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比较少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "极其多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "positive",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 18,
+      "question_text": "坐立不安的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎没有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比较少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "极其多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "negative",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 19,
+      "question_text": "有活力的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎没有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比较少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "极其多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "positive",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 20,
+      "question_text": "害怕的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "几乎没有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比较少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "极其多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "negative",
+      "is_alert_item": false
+    }
+  ]
+}

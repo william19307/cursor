@@ -1,0 +1,937 @@
+{
+  "name": "儿童孤独量表",
+  "short_name": "CLS",
+  "description": "评估6-15岁儿童在学校中孤独感的24题量表（16题计分+8题辅助填充）。由Asher SR & Wheeler VA 1985年编制，李晓巍等中文版，α=0.76-0.85。",
+  "applicable_levels": [
+    1,
+    2
+  ],
+  "question_count": 24,
+  "estimated_mins": 8,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [
+      1,
+      5,
+      7,
+      16,
+      22,
+      24
+    ],
+    "subscales": {},
+    "note": "只计16道主题题（非辅助题）的得分，辅助题（is_filler_no_score=true）不计入"
+  },
+  "result_levels": [
+    {
+      "range": [
+        16,
+        32
+      ],
+      "level": "low",
+      "label": "孤独感低",
+      "alert": null,
+      "note": "16道计分题总分"
+    },
+    {
+      "range": [
+        33,
+        48
+      ],
+      "level": "moderate",
+      "label": "中等孤独感",
+      "alert": "yellow",
+      "note": "16道计分题总分"
+    },
+    {
+      "range": [
+        49,
+        64
+      ],
+      "level": "high",
+      "label": "孤独感较高",
+      "alert": "orange",
+      "note": "16道计分题总分"
+    },
+    {
+      "range": [
+        65,
+        80
+      ],
+      "level": "severe",
+      "label": "孤独感严重",
+      "alert": "red",
+      "note": "16道计分题总分"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "我容易交到朋友",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "我没有朋友和我一起玩",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "我喜欢读书（辅助）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": true
+    },
+    {
+      "question_no": 4,
+      "question_text": "在学校里我觉得孤独",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "我的同学喜欢我",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "我擅长做游戏（辅助）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": true
+    },
+    {
+      "question_no": 7,
+      "question_text": "我有很多朋友",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "我感到难过，因为我想有更多的朋友",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "我喜欢看电视（辅助）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": true
+    },
+    {
+      "question_no": 10,
+      "question_text": "我不知道其他小朋友喜不喜欢我",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "我喜欢玩体育运动（辅助）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": true
+    },
+    {
+      "question_no": 12,
+      "question_text": "很难让我的同学喜欢我",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "我喜欢玩游戏（辅助）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": true
+    },
+    {
+      "question_no": 14,
+      "question_text": "在学校里我没有玩伴",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "我擅长学校里的活动（辅助）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": true
+    },
+    {
+      "question_no": 16,
+      "question_text": "我善于交朋友",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": false
+    },
+    {
+      "question_no": 17,
+      "question_text": "我感到孤单",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": false
+    },
+    {
+      "question_no": 18,
+      "question_text": "我喜欢做功课（辅助）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": true
+    },
+    {
+      "question_no": 19,
+      "question_text": "我跟别人相处不好",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": false
+    },
+    {
+      "question_no": 20,
+      "question_text": "我喜欢画图和绘画（辅助）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": true
+    },
+    {
+      "question_no": 21,
+      "question_text": "我没有可以交谈的人",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": false
+    },
+    {
+      "question_no": 22,
+      "question_text": "我和同学玩得很开心",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": false
+    },
+    {
+      "question_no": 23,
+      "question_text": "我喜欢科学（辅助）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": true
+    },
+    {
+      "question_no": 24,
+      "question_text": "我有可以一起玩的朋友",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "不是这样",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "很少这样",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "有时这样",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "经常这样",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "总是这样",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false,
+      "_is_filler_no_score": false
+    }
+  ]
+}

@@ -1,0 +1,746 @@
+{
+  "name": "反刍思维量表",
+  "short_name": "RRS",
+  "description": "评估对消极情绪的反复思考倾向，22题，含症状反刍、忧思和反省三维度。由Nolen-Hoeksema S 1991年编制，α=0.90，重测信度=0.82。",
+  "applicable_levels": [
+    2,
+    3
+  ],
+  "question_count": 22,
+  "estimated_mins": 8,
+  "scoring_type": "both",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [],
+    "subscales": {
+      "brooding": [
+        5,
+        10,
+        13,
+        15,
+        16
+      ],
+      "reflection": [
+        7,
+        11,
+        12,
+        20,
+        21
+      ],
+      "symptom": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        8,
+        9,
+        14,
+        17,
+        18,
+        19,
+        22
+      ]
+    },
+    "subscale_labels": {
+      "brooding": "强迫思考/忧思",
+      "reflection": "反省深思",
+      "symptom": "症状反刍"
+    }
+  },
+  "result_levels": [
+    {
+      "range": [
+        22,
+        44
+      ],
+      "level": "low",
+      "label": "反刍倾向较低",
+      "alert": null
+    },
+    {
+      "range": [
+        45,
+        66
+      ],
+      "level": "moderate",
+      "label": "中等反刍倾向",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        67,
+        88
+      ],
+      "level": "high",
+      "label": "反刍倾向较强",
+      "alert": "orange"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "我常常想我是多么孤独",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "symptom",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "我常常想：如果我不能停止想这些，那我就不能总是继续做手头的事",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "symptom",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "我常常想我疲劳、痛苦的感觉",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "symptom",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "我常常想：集中注意力是多么困难",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "symptom",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "我常常想我究竟做了什么会导致这样",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "brooding",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "我常常想自己是多么消极被动、毫无动力",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "symptom",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "我常常分析最近发生的事以便理解为什么感到郁闷",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "reflection",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "我常常想我对其他事情感到麻木",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "symptom",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "我常常想我为什么如此不顺心",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "symptom",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "我常常想我为什么总是这样",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "brooding",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "我常常独自思考为什么会这样",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "reflection",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "我常常写下自己正在想的事情并加以分析",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "reflection",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "我常常思考现状，希望它有所好转",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "brooding",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "我常常想如果这种感觉持续的话，就无法集中注意",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "symptom",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "我常常想为什么我有这些问题，而别人却没有",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "brooding",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 16,
+      "question_text": "我常常想我为什么不能把事情处理得更好",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "brooding",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 17,
+      "question_text": "我常常想我为什么感到如此伤心",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "symptom",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 18,
+      "question_text": "我常常想我的缺点、失败、错误和过失",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "symptom",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 19,
+      "question_text": "我常常想：我对做任何事都提不起劲来",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "symptom",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 20,
+      "question_text": "我常常分析自己的性格以便理解为何感到压抑",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "reflection",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 21,
+      "question_text": "我会常常单独到某个地方去想我的感受",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "reflection",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 22,
+      "question_text": "我常常想我是多么地生自己的气",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "经常",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "symptom",
+      "is_alert_item": false
+    }
+  ]
+}

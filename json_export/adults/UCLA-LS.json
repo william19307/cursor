@@ -1,0 +1,668 @@
+{
+  "name": "UCLA孤独感量表第三版",
+  "short_name": "UCLA-LS",
+  "description": "评估成人孤独感水平的20题量表（第三版）。由Russell DW 1996年编制，α=0.90。",
+  "applicable_levels": [],
+  "question_count": 20,
+  "estimated_mins": 7,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [
+      1,
+      5,
+      6,
+      9,
+      10,
+      15,
+      16,
+      19,
+      20
+    ],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        20,
+        28
+      ],
+      "level": "low",
+      "label": "低度孤独",
+      "alert": null
+    },
+    {
+      "range": [
+        29,
+        38
+      ],
+      "level": "moderate",
+      "label": "中等孤独",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        39,
+        43
+      ],
+      "level": "high",
+      "label": "较高孤独",
+      "alert": "orange"
+    },
+    {
+      "range": [
+        44,
+        80
+      ],
+      "level": "very_high",
+      "label": "高度孤独",
+      "alert": "red"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "您常感到与周围人的关系和谐吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 4
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 3
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "您常感到缺少伙伴吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "您常感到没人可以信赖吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "您常感到寂寞吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "您常感到属于朋友们中的一员吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 4
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 3
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "您常感到与周围的人有许多共同点吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 4
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 3
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "您常感到与任何人都不亲密了吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "您常感到您的兴趣与想法与周围的人不一样吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "您常感到想要与人来往、结交朋友吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 4
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 3
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "您常感到与人亲近吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 4
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 3
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "您常感到被人冷落吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "您常感到您与别人来往毫无意义吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "您常感到没有人很了解您吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "您常感到与别人隔开了吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "您常感到当您愿意时就能找到伙伴吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 4
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 3
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 16,
+      "question_text": "您常感到有人真正了解您吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 4
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 3
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 17,
+      "question_text": "您常感到羞怯吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 18,
+      "question_text": "您常感到有人围着您但并不关心您吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 19,
+      "question_text": "您常感到有人愿意与您交谈吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 4
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 3
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 20,
+      "question_text": "您常感到有人值得您信赖吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "从不",
+          "score": 4
+        },
+        {
+          "value": 2,
+          "label": "很少",
+          "score": 3
+        },
+        {
+          "value": 3,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 4,
+          "label": "总是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}

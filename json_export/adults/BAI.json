@@ -1,0 +1,688 @@
+{
+  "name": "贝克焦虑量表",
+  "short_name": "BAI",
+  "description": "评估过去一周焦虑症状严重程度的21题自评量表。由Beck AT等1988年编制，α=0.91-0.95。",
+  "applicable_levels": [],
+  "question_count": 21,
+  "estimated_mins": 8,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        7
+      ],
+      "level": "normal",
+      "label": "无焦虑",
+      "alert": null
+    },
+    {
+      "range": [
+        8,
+        15
+      ],
+      "level": "mild",
+      "label": "轻度焦虑",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        16,
+        25
+      ],
+      "level": "moderate",
+      "label": "中度焦虑",
+      "alert": "orange"
+    },
+    {
+      "range": [
+        26,
+        63
+      ],
+      "level": "severe",
+      "label": "重度焦虑",
+      "alert": "red"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "麻木或刺痛感",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "感到发热",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "腿部颤抖",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "无法放松",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "担心发生最坏的事情",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "头晕或感到轻飘飘",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "心跳加速或心悸",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "坐立不安",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "被吓到",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "神经紧张",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "窒息感",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "手发抖",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "颤抖",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "害怕失控",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "呼吸困难",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 16,
+      "question_text": "害怕快要死去",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 17,
+      "question_text": "恐慌",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 18,
+      "question_text": "消化不良或腹部不适",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 19,
+      "question_text": "昏厥感",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 20,
+      "question_text": "脸红",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 21,
+      "question_text": "出汗（不因暑热）",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "轻度，无多大烦扰",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "中度，不舒适但尚能忍受",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "重度，只能勉强忍受",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}

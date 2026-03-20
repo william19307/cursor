@@ -1,0 +1,476 @@
+{
+  "name": "贝克绝望感量表",
+  "short_name": "BHS",
+  "description": "评估对未来消极预期的20题量表，是自杀风险的重要预测指标。由Beck AT等1974年编制，α=0.93。高分（≥9分）与自杀风险相关。",
+  "applicable_levels": [],
+  "question_count": 20,
+  "estimated_mins": 8,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [
+      1,
+      3,
+      5,
+      6,
+      8,
+      10,
+      13,
+      15,
+      19
+    ],
+    "note": "答'是'且对应无望方向得1分，答'否'且对应有望方向得1分（具体见原量表）",
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        3
+      ],
+      "level": "minimal",
+      "label": "无/轻微绝望",
+      "alert": null
+    },
+    {
+      "range": [
+        4,
+        8
+      ],
+      "level": "mild",
+      "label": "轻度绝望",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        9,
+        14
+      ],
+      "level": "moderate",
+      "label": "中度绝望",
+      "alert": "orange"
+    },
+    {
+      "range": [
+        15,
+        20
+      ],
+      "level": "severe",
+      "label": "重度绝望",
+      "alert": "red"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": [
+      {
+        "question_no": null,
+        "condition": "total >= 9",
+        "alert": "red",
+        "reason": "绝望感评分≥9分，与自杀风险显著相关，须进行安全评估"
+      }
+    ]
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "我对未来充满希望与热情",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "我不如自己努力摆脱困境，因为根本没有什么可做的",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "当事情进展不顺利时，我总是知道会好转的",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "我无法想象10年后的生活会是什么样的",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "我有足够的时间来完成我最渴望做的事情",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "在未来，我预计自己会成功地达到我最重要的目标",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "我的未来对我来说看起来很暗淡",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "我碰巧比其他人更好运，从好事中获得良好利益",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "我无法获得良好的生活",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "我过去的经历很好地为我的未来做了准备",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "我看到的未来除了不愉快之外什么都没有",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "我不指望得到我真正想要的东西",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "当我展望未来时，我期待比现在更幸福",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "事情从来不会如我所愿",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "我对未来充满信心",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 16,
+      "question_text": "我永远得不到我想要的，所以想要任何东西都是愚蠢的",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 17,
+      "question_text": "我几乎不可能在未来获得真正的满足",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 18,
+      "question_text": "未来对我来说看起来很模糊和不确定",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 19,
+      "question_text": "我可以期待比坏事更多的好事",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 20,
+      "question_text": "为了未来努力是毫无意义的",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}

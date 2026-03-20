@@ -1,0 +1,279 @@
+{
+  "name": "匹兹堡睡眠质量指数",
+  "short_name": "PSQI",
+  "description": "评估最近一个月睡眠质量的量表，含填写时间、频率选择等混合题型，需计算7个成分得分。由Buysse DJ等1989年编制，刘贤臣等1996年中文版。",
+  "applicable_levels": [
+    3
+  ],
+  "question_count": 19,
+  "estimated_mins": 10,
+  "scoring_type": "both",
+  "scoring_rule": {
+    "method": "formula",
+    "formula": "component scores A-G calculated per PSQI manual; total = sum of 7 components",
+    "note": "7个成分：A主观睡眠质量、B入睡时间、C睡眠时长、D睡眠效率、E睡眠障碍、F催眠药物、G日间功能。各成分0-3分，总分0-21分。",
+    "reverse_items": [],
+    "subscales": {
+      "A_quality": [
+        "q6"
+      ],
+      "B_latency": [
+        "q2",
+        "q5a"
+      ],
+      "C_duration": [
+        "q4"
+      ],
+      "D_efficiency": [
+        "q1",
+        "q3",
+        "q4"
+      ],
+      "E_disturbance": [
+        "q5b_j"
+      ],
+      "F_medication": [
+        "q7"
+      ],
+      "G_daytime": [
+        "q8",
+        "q9"
+      ]
+    }
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        5
+      ],
+      "level": "good",
+      "label": "睡眠质量很好",
+      "alert": null,
+      "note": "总分"
+    },
+    {
+      "range": [
+        6,
+        10
+      ],
+      "level": "fair",
+      "label": "睡眠质量较好",
+      "alert": null,
+      "note": "总分"
+    },
+    {
+      "range": [
+        11,
+        15
+      ],
+      "level": "poor",
+      "label": "睡眠质量较差",
+      "alert": "yellow",
+      "note": "总分"
+    },
+    {
+      "range": [
+        16,
+        21
+      ],
+      "level": "very_poor",
+      "label": "睡眠质量很差",
+      "alert": "orange",
+      "note": "总分"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "_incomplete": false,
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "过去一个月，您通常上床睡觉的时间是？",
+      "question_type": "text",
+      "options": [],
+      "reverse_score": false,
+      "subscale_key": "D_efficiency",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "过去一个月，每晚通常要多长时间（分钟）才能入睡？",
+      "question_type": "number",
+      "options": [],
+      "reverse_score": false,
+      "subscale_key": "B_latency",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "过去一个月，每天早上通常什么时候起床？",
+      "question_type": "text",
+      "options": [],
+      "reverse_score": false,
+      "subscale_key": "D_efficiency",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "过去一个月，每晚实际睡眠时间有多少小时？",
+      "question_type": "number",
+      "options": [],
+      "reverse_score": false,
+      "subscale_key": "C_duration",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "过去一个月，因不能在30分钟内入睡而影响睡眠的频率？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "<1次/周",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "1-2次/周",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "≥3次/周",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "B_latency",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "过去一个月，您对总体睡眠质量的评价？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "很好",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "较好",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "较差",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很差",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "A_quality",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "过去一个月，使用催眠药物（处方药或非处方药）的频率？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "<1次/周",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "1-2次/周",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "≥3次/周",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "F_medication",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "过去一个月，开车、吃饭等时难以保持清醒的频率？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "<1次/周",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "1-2次/周",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "≥3次/周",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "G_daytime",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "过去一个月，做事时精力不足的困扰程度？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "非常明显",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "G_daytime",
+      "is_alert_item": false
+    }
+  ]
+}

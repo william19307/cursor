@@ -1,0 +1,1409 @@
+{
+  "name": "教师效能感量表",
+  "short_name": "TSES",
+  "description": "评估教师在课堂管理、教学策略、学生参与三方面效能感的24题量表，九级评分。由Tschannen-Moran M & Hoy AW 2001年编制，α=0.888。",
+  "applicable_levels": [],
+  "question_count": 24,
+  "estimated_mins": 10,
+  "scoring_type": "subscale",
+  "scoring_rule": {
+    "method": "formula",
+    "formula": "subscale_mean = subscale_sum / n_items",
+    "reverse_items": [],
+    "subscales": {
+      "student_engagement": [
+        1,
+        2,
+        3,
+        5,
+        20,
+        21,
+        22,
+        23
+      ],
+      "instructional_strategies": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        19,
+        24
+      ],
+      "classroom_management": [
+        4,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    "subscale_labels": {
+      "student_engagement": "学生参与效能感",
+      "instructional_strategies": "教学策略效能感",
+      "classroom_management": "课堂管理效能感"
+    }
+  },
+  "result_levels": [
+    {
+      "range": [
+        1,
+        4
+      ],
+      "level": "low",
+      "label": "效能感偏低",
+      "alert": "yellow",
+      "note": "均分"
+    },
+    {
+      "range": [
+        4,
+        7
+      ],
+      "level": "moderate",
+      "label": "效能感中等",
+      "alert": null,
+      "note": "均分"
+    },
+    {
+      "range": [
+        7,
+        9
+      ],
+      "level": "high",
+      "label": "效能感较高",
+      "alert": null,
+      "note": "均分"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "能有多大程度控制那些会破坏课堂的行为？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "student_engagement",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "能在多大程度上激励那些学习动机低的学生？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "student_engagement",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "能在多大程度上让学生相信自己在学校中能做好？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "student_engagement",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "能在多大程度上让学生注意课堂规矩？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "classroom_management",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "能在多大程度上激励学生重视学业？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "student_engagement",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "能在多大程度上帮助学生进行批判性思维？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "instructional_strategies",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "能在多大程度上让学生在课堂上有创造性思维？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "instructional_strategies",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "能在多大程度上帮助学生学会解决问题？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "instructional_strategies",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "能在多大程度上为不同学习能力的学生提供不同解释？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "instructional_strategies",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "能在多大程度上提供好的问题让学生思考？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "instructional_strategies",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "能在多大程度上使用多种评估方法？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "instructional_strategies",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "能在多大程度上为困难学生提供有效的替代解释？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "instructional_strategies",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "能在多大程度上实施多种教学策略？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "instructional_strategies",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "能在多大程度上让学生遵守课堂规则？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "classroom_management",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "能在多大程度上建立课堂常规？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "classroom_management",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 16,
+      "question_text": "能在多大程度上控制破坏性行为？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "classroom_management",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 17,
+      "question_text": "能在多大程度上维持课堂纪律？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "classroom_management",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 18,
+      "question_text": "能在多大程度上应对学生的挑战？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "classroom_management",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 19,
+      "question_text": "能在多大程度上确定学生是否理解了所教授的内容？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "instructional_strategies",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 20,
+      "question_text": "能在多大程度上让家长参与孩子的教育？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "student_engagement",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 21,
+      "question_text": "能在多大程度上按自己的方式处理教学工作？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "student_engagement",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 22,
+      "question_text": "能在多大程度上激励那些对校内活动兴趣不高的学生？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "student_engagement",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 23,
+      "question_text": "能在多大程度上冷静地处理学生情绪上的问题？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "student_engagement",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 24,
+      "question_text": "能在多大程度上为学习困难的学生提供适当的挑战？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "1（完全没有）",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2（很少）",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3（有一些）",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4（有些程度）",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5（中等程度）",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6（相当程度）",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7（大程度）",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8（非常大程度）",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9（极大程度）",
+          "score": 9
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "instructional_strategies",
+      "is_alert_item": false
+    }
+  ]
+}
