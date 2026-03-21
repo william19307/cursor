@@ -1,0 +1,546 @@
+{
+  "name": "感知压力量表14题版",
+  "short_name": "PSS-14",
+  "description": "评估近一个月感知压力水平的14题量表。由Cohen S等1983年编制，α=0.78-0.86。",
+  "applicable_levels": [],
+  "question_count": 14,
+  "estimated_mins": 6,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [
+      4,
+      5,
+      7,
+      12,
+      13,
+      14
+    ],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        19
+      ],
+      "level": "low",
+      "label": "低压力",
+      "alert": null
+    },
+    {
+      "range": [
+        20,
+        34
+      ],
+      "level": "moderate",
+      "label": "中等压力",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        35,
+        56
+      ],
+      "level": "high",
+      "label": "高压力",
+      "alert": "orange"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "因为发生意外的事情而感到心烦意乱",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "相当多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很频繁",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "感到无法控制生活中重要的事情",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "相当多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很频繁",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "感到紧张和有压力",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "相当多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很频繁",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "成功地处理了生活中令人烦恼的问题",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 4
+        },
+        {
+          "value": 1,
+          "label": "几乎不",
+          "score": 3
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "相当多",
+          "score": 1
+        },
+        {
+          "value": 4,
+          "label": "很频繁",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "感到自己有效地应付了生活中的重要变化",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 4
+        },
+        {
+          "value": 1,
+          "label": "几乎不",
+          "score": 3
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "相当多",
+          "score": 1
+        },
+        {
+          "value": 4,
+          "label": "很频繁",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "对处理个人问题的能力没有信心",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "相当多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很频繁",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "能够按自己的意愿行事",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 4
+        },
+        {
+          "value": 1,
+          "label": "几乎不",
+          "score": 3
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "相当多",
+          "score": 1
+        },
+        {
+          "value": 4,
+          "label": "很频繁",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "感到无力控制事情的方式",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "相当多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很频繁",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "因为超出控制的事情而愤怒",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "相当多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很频繁",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "感到困难在增加，以至于无法克服",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "相当多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很频繁",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "为意料之外发生的事情烦恼",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "几乎不",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "相当多",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "很频繁",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "感到能够掌控烦恼事件",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 4
+        },
+        {
+          "value": 1,
+          "label": "几乎不",
+          "score": 3
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "相当多",
+          "score": 1
+        },
+        {
+          "value": 4,
+          "label": "很频繁",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "能够管理自己消极的感受",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 4
+        },
+        {
+          "value": 1,
+          "label": "几乎不",
+          "score": 3
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "相当多",
+          "score": 1
+        },
+        {
+          "value": 4,
+          "label": "很频繁",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "感到事情正按照自己的意愿发展",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 4
+        },
+        {
+          "value": 1,
+          "label": "几乎不",
+          "score": 3
+        },
+        {
+          "value": 2,
+          "label": "有时",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "相当多",
+          "score": 1
+        },
+        {
+          "value": 4,
+          "label": "很频繁",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}

@@ -1,0 +1,404 @@
+{
+  "name": "一般健康问卷",
+  "short_name": "GHQ-12",
+  "description": "成人心理健康快速筛查的12题量表。由Goldberg DP 1972年编制，α=0.82-0.89。",
+  "applicable_levels": [],
+  "question_count": 12,
+  "estimated_mins": 5,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "formula",
+    "formula": "GHQ scoring: '比平时好'/'和平时一样'=0, '比平时差'/'差很多'=1; OR Likert 0-1-2-3",
+    "reverse_items": [],
+    "subscales": {},
+    "note": "GHQ二分计分法（0-12分）；或李克特四级计分（0-36分）"
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        2
+      ],
+      "level": "normal",
+      "label": "无明显心理健康问题",
+      "alert": null,
+      "note": "GHQ二分法总分"
+    },
+    {
+      "range": [
+        3,
+        12
+      ],
+      "level": "positive",
+      "label": "可能存在心理健康问题",
+      "alert": "yellow",
+      "note": "GHQ二分法总分"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "在做什么事情的时候，能集中精神吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本没有",
+          "score": 3
+        },
+        {
+          "value": 1,
+          "label": "和平时一样",
+          "score": 2
+        },
+        {
+          "value": 2,
+          "label": "比以前多",
+          "score": 1
+        },
+        {
+          "value": 3,
+          "label": "比以前多很多",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "有由于过分担心而失眠的情况吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "比平时好",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "和平时一样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比平时差",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "差很多",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "觉得自己是有用的人吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本没有",
+          "score": 3
+        },
+        {
+          "value": 1,
+          "label": "和平时一样",
+          "score": 2
+        },
+        {
+          "value": 2,
+          "label": "比以前多",
+          "score": 1
+        },
+        {
+          "value": 3,
+          "label": "比以前多很多",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "觉得自己有决断力吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本没有",
+          "score": 3
+        },
+        {
+          "value": 1,
+          "label": "和平时一样",
+          "score": 2
+        },
+        {
+          "value": 2,
+          "label": "比以前多",
+          "score": 1
+        },
+        {
+          "value": 3,
+          "label": "比以前多很多",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "总是处于紧张状态吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "比平时好",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "和平时一样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比平时差",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "差很多",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "觉得自己不能解决问题吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "比平时好",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "和平时一样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比平时差",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "差很多",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "能享受日常活动吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本没有",
+          "score": 3
+        },
+        {
+          "value": 1,
+          "label": "和平时一样",
+          "score": 2
+        },
+        {
+          "value": 2,
+          "label": "比以前多",
+          "score": 1
+        },
+        {
+          "value": 3,
+          "label": "比以前多很多",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "能够面对您所面临的问题吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本没有",
+          "score": 3
+        },
+        {
+          "value": 1,
+          "label": "和平时一样",
+          "score": 2
+        },
+        {
+          "value": 2,
+          "label": "比以前多",
+          "score": 1
+        },
+        {
+          "value": 3,
+          "label": "比以前多很多",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "感到痛苦、忧虑吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "比平时好",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "和平时一样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比平时差",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "差很多",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "失去自信了吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "比平时好",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "和平时一样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比平时差",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "差很多",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "觉得自己是没有价值的人吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "比平时好",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "和平时一样",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比平时差",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "差很多",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "觉得所有的事情都顺利吗？",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "根本没有",
+          "score": 3
+        },
+        {
+          "value": 1,
+          "label": "和平时一样",
+          "score": 2
+        },
+        {
+          "value": 2,
+          "label": "比以前多",
+          "score": 1
+        },
+        {
+          "value": 3,
+          "label": "比以前多很多",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}

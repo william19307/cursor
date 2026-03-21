@@ -1,0 +1,59 @@
+{
+  "name": "简易精神状态检查",
+  "short_name": "MMSE",
+  "description": "评估认知功能障碍的30题面谈式测试，需专业人员实施。由Folstein MF等1975年编制，需常模参照。",
+  "applicable_levels": [],
+  "question_count": 30,
+  "estimated_mins": 10,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "norm",
+    "note": "需专业人员面对面实施；包含定向力（10题）、即时记忆（3题）、注意力（5题）、延迟回忆（3题）、语言能力（9题）",
+    "reverse_items": [],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        27,
+        30
+      ],
+      "level": "normal",
+      "label": "认知功能正常",
+      "alert": null
+    },
+    {
+      "range": [
+        20,
+        26
+      ],
+      "level": "mild",
+      "label": "轻度认知障碍",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        10,
+        19
+      ],
+      "level": "moderate",
+      "label": "中度认知障碍",
+      "alert": "orange"
+    },
+    {
+      "range": [
+        0,
+        9
+      ],
+      "level": "severe",
+      "label": "重度认知障碍",
+      "alert": "red"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": false,
+  "_note": "需专业人员面谈实施，不适合在线自评系统",
+  "questions": []
+}

@@ -1,0 +1,313 @@
+{
+  "name": "生活满意度量表",
+  "short_name": "SWLS",
+  "description": "评估整体主观生活满意度的5题量表，七级评分。由Diener E等1985年编制，公共领域免费使用，α=0.78-0.87。",
+  "applicable_levels": [
+    2,
+    3
+  ],
+  "question_count": 5,
+  "estimated_mins": 3,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        5,
+        9
+      ],
+      "level": "very_dissatisfied",
+      "label": "非常不满意",
+      "alert": "orange"
+    },
+    {
+      "range": [
+        10,
+        14
+      ],
+      "level": "dissatisfied",
+      "label": "不满意",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        15,
+        19
+      ],
+      "level": "slightly_dissatisfied",
+      "label": "有些不满意",
+      "alert": null
+    },
+    {
+      "range": [
+        20,
+        20
+      ],
+      "level": "neutral",
+      "label": "中性",
+      "alert": null
+    },
+    {
+      "range": [
+        21,
+        25
+      ],
+      "level": "slightly_satisfied",
+      "label": "较为满意",
+      "alert": null
+    },
+    {
+      "range": [
+        26,
+        30
+      ],
+      "level": "satisfied",
+      "label": "满意",
+      "alert": null
+    },
+    {
+      "range": [
+        31,
+        35
+      ],
+      "level": "very_satisfied",
+      "label": "非常满意",
+      "alert": null
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "我生活中的大多数方面接近我的理想",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "完全同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "我的生活条件很好",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "完全同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "我对自己的生活感到满意",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "完全同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "迄今为止我在生活中得到了想得到的重要东西",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "完全同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "如果我能回头重走人生之路，我几乎不想改变任何东西",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不同意",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "不确定",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "有些同意",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "同意",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "完全同意",
+          "score": 7
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}

@@ -1,0 +1,695 @@
+{
+  "name": "贝克抑郁量表第二版",
+  "short_name": "BDI-II",
+  "description": "评估过去两周抑郁症状严重程度的21题自评量表，每题四个陈述选最符合的（0-3分）。由Beck AT等1996年编制，α=0.91-0.95。",
+  "applicable_levels": [],
+  "question_count": 21,
+  "estimated_mins": 10,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        13
+      ],
+      "level": "minimal",
+      "label": "无/极小抑郁",
+      "alert": null
+    },
+    {
+      "range": [
+        14,
+        19
+      ],
+      "level": "mild",
+      "label": "轻度抑郁",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        20,
+        28
+      ],
+      "level": "moderate",
+      "label": "中度抑郁",
+      "alert": "orange"
+    },
+    {
+      "range": [
+        29,
+        63
+      ],
+      "level": "severe",
+      "label": "重度抑郁",
+      "alert": "red"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": [
+      {
+        "question_no": 9,
+        "condition": "value >= 1",
+        "alert": "red",
+        "reason": "有自杀念头（想杀死自己）"
+      }
+    ]
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "悲伤情绪",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我不感到悲伤",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "我大部分时间感到悲伤",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "我常常感到悲伤",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "我总是感到悲伤",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "对未来悲观",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我对未来并不悲观",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "比以前更悲观",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "我不期待事情好转",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "未来毫无希望，只会更糟",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "失败感",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我不觉得自己是个失败者",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "我失败的次数比应该有的多",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "回顾过去，我看到许多失败",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "我感到自己是个彻底的失败者",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "丧失愉悦感",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我从过去喜欢的事情中得到同样的满足感",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "我不再像以前那样享受事情",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "我从以前享受的事情中获得很少满足感",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "我从以前享受的事情中获得不到任何满足感",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "内疚感",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我不特别感到内疚",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "我对很多事情感到内疚",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "我大部分时间感到内疚",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "我总是感到内疚",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "惩罚感",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我不感到我在被惩罚",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "我感到可能受到惩罚",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "我期待受到惩罚",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "我感到我正在受到惩罚",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "自我评价",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我对自己感觉和以前一样",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "我失去了对自己的信心",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "我对自己感到失望",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "我讨厌自己",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "自我批评",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我不比以前更自责",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "我比以前更批评自己",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "我为所有的过失责备自己",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "我为所有坏事责备自己",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "自杀念头",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我没有想过杀死自己",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "我有杀死自己的想法但不会去做",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "我很想杀死自己",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "如果有机会我会杀死自己",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": true
+    },
+    {
+      "question_no": 10,
+      "question_text": "哭泣",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我不比以前哭更多",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "比以前哭得更多",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "现在任何小事都让我哭",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "我想哭但哭不出来",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "烦躁",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我不比平时更烦躁",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "比平时更容易烦躁",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "比以前更容易烦躁",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "我一直感到烦躁",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "对活动丧失兴趣",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我没有失去对人或活动的兴趣",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "我比以前对人或事物更少感兴趣",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "我失去了对大多数人或事的兴趣",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "很难对任何事情感兴趣",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "优柔寡断",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我做决定和以前一样容易",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "我发现做决定比以前困难",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "我做决定比以前更困难",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "我在做任何决定上都有困难",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "无价值感",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我不觉得自己毫无价值",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "我不认为自己和以前一样有价值和有用",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "与他人相比我觉得自己没什么价值",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "我感到自己完全没有价值",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "精力丧失",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我的精力和以前一样多",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "我的精力比以前少了",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "我没有足够的精力做多少事情",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "我没有精力做任何事情",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 16,
+      "question_text": "睡眠变化",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我的睡眠没有改变",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "我比平时睡得略多/少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "我比平时睡得多/少很多",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "我几乎整天睡觉/严重失眠",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 17,
+      "question_text": "易怒",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我不比以前更易怒",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "比平时更易怒",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "我比以前更易怒",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "我一直感到易怒",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 18,
+      "question_text": "食欲变化",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我的食欲没有改变",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "我的食欲略有减少/增加",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "我的食欲减少/增加很多",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "我完全没有食欲/总是渴望食物",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 19,
+      "question_text": "注意力集中困难",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我的注意力和以前一样",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "我的注意力不如以前",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "我很难长时间集中注意力",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "我发现我根本无法集中注意力",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 20,
+      "question_text": "疲劳",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我不比以前更疲劳",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "我比以前更容易疲劳",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "我太疲了，许多事情都无法进行",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "我太疲劳了，做任何事都没有",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 21,
+      "question_text": "性欲减退",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "我最近没注意到性欲有变化",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "我比以前对性的兴趣少了",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "我现在对性的兴趣少了很多",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "我对性完全失去了兴趣",
+          "score": 3
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}

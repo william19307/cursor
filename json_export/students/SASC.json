@@ -1,0 +1,321 @@
+{
+  "name": "儿童社交焦虑量表",
+  "short_name": "SASC",
+  "description": "评估6-13岁儿童社交焦虑的10题量表，含害怕否定评价和社交回避两个因子。由La Greca AM & Stone WL 1993年编制，α=0.76。",
+  "applicable_levels": [
+    1,
+    2
+  ],
+  "question_count": 10,
+  "estimated_mins": 5,
+  "scoring_type": "both",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [],
+    "subscales": {
+      "fne": [
+        1,
+        2,
+        5,
+        6,
+        8,
+        10
+      ],
+      "sad": [
+        3,
+        4,
+        7,
+        9
+      ]
+    },
+    "subscale_labels": {
+      "fne": "害怕否定评价",
+      "sad": "社交回避及苦恼"
+    }
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        6
+      ],
+      "level": "normal",
+      "label": "无明显社交焦虑",
+      "alert": null
+    },
+    {
+      "range": [
+        7,
+        12
+      ],
+      "level": "mild",
+      "label": "中等社交焦虑",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        13,
+        20
+      ],
+      "level": "severe",
+      "label": "明显社交焦虑",
+      "alert": "orange"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "我害怕在别的孩子面前做没做过的事",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "一直有",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "fne",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "我担心被人取笑",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "一直有",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "fne",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "我周围都是我不认识的小朋友时，我觉得害羞",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "一直有",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "sad",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "我和小伙伴一起时很少说话",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "一直有",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "sad",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "我担心其他孩子会怎么样看待我",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "一直有",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "fne",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "我觉得小朋友们取笑我",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "一直有",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "fne",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "我和陌生的小朋友说话时感到紧张",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "一直有",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "sad",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "我担心其他孩子会怎样说我",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "一直有",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "fne",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "我只同我熟悉的小朋友说话",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "一直有",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "sad",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "我担心别的小朋友会不喜欢我",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "从无",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "一直有",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "fne",
+      "is_alert_item": false
+    }
+  ]
+}

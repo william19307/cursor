@@ -1,0 +1,264 @@
+{
+  "name": "特质乐观量表修订版",
+  "short_name": "LOT-R",
+  "description": "评估对未来结果乐观程度的6题量表（含4道填充题，不计分）。由Scheier MF等1994年编制，α=0.71-0.84。",
+  "applicable_levels": [],
+  "question_count": 6,
+  "estimated_mins": 3,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [
+      3,
+      6,
+      8
+    ],
+    "note": "原始问卷题号为1,3,4,6,8,10，本版重新编号为1-6",
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        8
+      ],
+      "level": "pessimistic",
+      "label": "悲观倾向",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        9,
+        14
+      ],
+      "level": "moderate",
+      "label": "中等乐观",
+      "alert": null
+    },
+    {
+      "range": [
+        15,
+        24
+      ],
+      "level": "optimistic",
+      "label": "乐观倾向",
+      "alert": null
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "不确定时，我通常期待最好的结果",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "强烈不同意",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不确定",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "强烈同意",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "如果出了什么不好的事，对我来说就可能出更多不好的事",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "强烈不同意",
+          "score": 4
+        },
+        {
+          "value": 1,
+          "label": "不同意",
+          "score": 3
+        },
+        {
+          "value": 2,
+          "label": "不确定",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "同意",
+          "score": 1
+        },
+        {
+          "value": 4,
+          "label": "强烈同意",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "我总是对我的未来持乐观态度",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "强烈不同意",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不确定",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "强烈同意",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "对我来说，事情从来不会像我希望的那样发展",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "强烈不同意",
+          "score": 4
+        },
+        {
+          "value": 1,
+          "label": "不同意",
+          "score": 3
+        },
+        {
+          "value": 2,
+          "label": "不确定",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "同意",
+          "score": 1
+        },
+        {
+          "value": 4,
+          "label": "强烈同意",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "我很少期待事情向我期望的方向发展",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "强烈不同意",
+          "score": 4
+        },
+        {
+          "value": 1,
+          "label": "不同意",
+          "score": 3
+        },
+        {
+          "value": 2,
+          "label": "不确定",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "同意",
+          "score": 1
+        },
+        {
+          "value": 4,
+          "label": "强烈同意",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "总体上，我期待会发生更多好事而非坏事",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "强烈不同意",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "不同意",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不确定",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "同意",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "强烈同意",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}

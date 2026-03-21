@@ -1,0 +1,302 @@
+{
+  "name": "简式自我控制量表",
+  "short_name": "BSCS",
+  "description": "评估自律性和冲动控制的7题量表。由Morean等2014年编制，中文版α=0.83，重测信度=0.81。",
+  "applicable_levels": [
+    2,
+    3
+  ],
+  "question_count": 7,
+  "estimated_mins": 3,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [
+      2,
+      4,
+      6,
+      7
+    ],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        7,
+        17
+      ],
+      "level": "low",
+      "label": "自我控制能力较弱",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        18,
+        25
+      ],
+      "level": "medium",
+      "label": "自我控制能力中等",
+      "alert": null
+    },
+    {
+      "range": [
+        26,
+        35
+      ],
+      "level": "high",
+      "label": "自我控制能力较强",
+      "alert": null
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "我能很好地抵制诱惑",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "一般",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "我会做一些能给自己带来快乐但对自己有害的事",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "一般",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "大家说我有钢铁般的自制力",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "一般",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "有时我会被有乐趣的事情干扰而不能按时完成任务",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "一般",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "我能为了一个长远目标高效地工作",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "一般",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "有时我会忍不住去做一些明明知道不对的事情",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "一般",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "我常常考虑不周就付诸行动",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "完全不符合",
+          "score": 5
+        },
+        {
+          "value": 2,
+          "label": "不太符合",
+          "score": 4
+        },
+        {
+          "value": 3,
+          "label": "一般",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "比较符合",
+          "score": 2
+        },
+        {
+          "value": 5,
+          "label": "完全符合",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}

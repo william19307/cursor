@@ -1,0 +1,365 @@
+{
+  "name": "老年抑郁量表简版",
+  "short_name": "GDS-15",
+  "description": "用于老年人（≥60岁）抑郁筛查的15题是/否量表。由Yesavage JA等1983年编制，α=0.85。",
+  "applicable_levels": [],
+  "question_count": 15,
+  "estimated_mins": 5,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [
+      1,
+      5,
+      7,
+      9,
+      15
+    ],
+    "note": "答'是'且对应抑郁的答案得1分，答'否'且对应抑郁答案（反向题）得1分",
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        4
+      ],
+      "level": "normal",
+      "label": "正常，无抑郁",
+      "alert": null
+    },
+    {
+      "range": [
+        5,
+        8
+      ],
+      "level": "mild",
+      "label": "轻度抑郁",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        9,
+        11
+      ],
+      "level": "moderate",
+      "label": "中度抑郁",
+      "alert": "orange"
+    },
+    {
+      "range": [
+        12,
+        15
+      ],
+      "level": "severe",
+      "label": "重度抑郁",
+      "alert": "red"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "总的来说，您对自己的生活感到满意吗？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 1
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "您是否减少了许多以往的兴趣和爱好？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "您是否感到生活空虚？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "您是否经常感到厌倦？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "您对未来充满希望吗？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 1
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "您是否有一些无法摆脱的令人烦恼的想法？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "您大多数时候精神状态良好吗？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 1
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "您是否害怕会有坏事降临到您身上？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "您大多数时间是否感到幸福？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 1
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "您是否经常感到无助？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "您是否经常感到不安或坐立不安？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "您是否宁愿待在家里，而不是去做一些新的事情？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "您是否经常担忧将来的事情？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "您觉得您的记忆力比大多数人差吗？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 1
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "您觉得活着是美好的吗？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "否",
+          "score": 1
+        },
+        {
+          "value": 1,
+          "label": "是",
+          "score": 0
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}

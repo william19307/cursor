@@ -1,0 +1,41 @@
+{
+  "name": "蒙特利尔认知评估量表",
+  "short_name": "MoCA",
+  "description": "评估轻度认知障碍的面谈式评估工具，共30分，需专业人员实施。由Nasreddine ZS等2005年编制。",
+  "applicable_levels": [],
+  "question_count": 30,
+  "estimated_mins": 10,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "formula",
+    "note": "需专业人员实施；教育年限≤12年可加1分（最高30分）",
+    "reverse_items": [],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        26,
+        30
+      ],
+      "level": "normal",
+      "label": "认知功能正常",
+      "alert": null
+    },
+    {
+      "range": [
+        0,
+        25
+      ],
+      "level": "impaired",
+      "label": "提示轻度认知障碍",
+      "alert": "orange"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": false,
+  "_note": "需专业人员面谈实施",
+  "questions": []
+}

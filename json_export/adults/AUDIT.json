@@ -1,0 +1,401 @@
+{
+  "name": "酒精使用障碍识别测验",
+  "short_name": "AUDIT",
+  "description": "WHO开发的10题酒精筛查工具，识别危险饮酒、有害饮酒和酒精依赖。中文版灵敏度0.96，特异度0.85。",
+  "applicable_levels": [],
+  "question_count": 10,
+  "estimated_mins": 5,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        7
+      ],
+      "level": "low",
+      "label": "低风险",
+      "alert": null
+    },
+    {
+      "range": [
+        8,
+        15
+      ],
+      "level": "risky",
+      "label": "危险饮酒",
+      "alert": "yellow"
+    },
+    {
+      "range": [
+        16,
+        19
+      ],
+      "level": "harmful",
+      "label": "有害饮酒",
+      "alert": "orange"
+    },
+    {
+      "range": [
+        20,
+        40
+      ],
+      "level": "dependent",
+      "label": "可能酒精依赖",
+      "alert": "red"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": [
+      {
+        "question_no": 9,
+        "condition": "value >= 2",
+        "alert": "orange",
+        "reason": "饮酒已造成伤害"
+      },
+      {
+        "question_no": 10,
+        "condition": "value >= 2",
+        "alert": "orange",
+        "reason": "他人已对饮酒表示担忧"
+      }
+    ]
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "您的饮酒频率如何？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "每月≤1次",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "每月2-4次",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "每周2-3次",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "每周≥4次",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "饮酒时，您通常会喝几杯？（1杯=含10g纯酒精）",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "1-2杯",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "3-4杯",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "5-6杯",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "7-9杯",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "≥10杯",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "每次喝6杯以上的情况有多频繁？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "不到每月",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "每月",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "每周",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "几乎每天",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "过去一年，您是否发现一旦开始喝酒就很难停下来？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "不到每月",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "每月",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "每周",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "几乎每天",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "过去一年，您是否因为饮酒而不能完成日常工作？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "不到每月",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "每月",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "每周",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "几乎每天",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "过去一年，大量饮酒后，您是否需要在早上喝酒才能正常生活？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "不到每月",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "每月",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "每周",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "几乎每天",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "过去一年，您是否在饮酒后感到内疚或后悔？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "不到每月",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "每月",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "每周",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "几乎每天",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "过去一年，您是否因为饮酒而不能记起前一晚发生的事情？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "从不",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "不到每月",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "每月",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "每周",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "几乎每天",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "您或他人是否因为您的饮酒而受到伤害？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有，但不是过去一年",
+          "score": 2
+        },
+        {
+          "value": 2,
+          "label": "是，在过去一年",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": true
+    },
+    {
+      "question_no": 10,
+      "question_text": "家人、朋友、医生是否对您饮酒表示担忧或建议您戒酒？",
+      "question_type": "single",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有，但不是过去一年",
+          "score": 2
+        },
+        {
+          "value": 2,
+          "label": "是，在过去一年",
+          "score": 4
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": true
+    }
+  ]
+}

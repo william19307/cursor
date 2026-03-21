@@ -1,0 +1,887 @@
+{
+  "name": "创伤后成长量表",
+  "short_name": "PTGI",
+  "description": "评估经历创伤性事件后积极心理变化的20题量表，总分0-100分。由Tedeschi RG & Calhoun LG 1996年编制，汪际等中文版，α=0.90。",
+  "applicable_levels": [
+    2,
+    3
+  ],
+  "question_count": 20,
+  "estimated_mins": 8,
+  "scoring_type": "both",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [],
+    "subscales": {
+      "life_appreciation": [
+        2,
+        3,
+        7,
+        11,
+        13,
+        17,
+        19
+      ],
+      "personal_strength": [
+        4,
+        10,
+        12,
+        16
+      ],
+      "new_possibilities": [
+        1,
+        5,
+        14,
+        15,
+        18
+      ],
+      "relating_others": [
+        6,
+        8,
+        9,
+        20
+      ]
+    },
+    "subscale_labels": {
+      "life_appreciation": "人生感悟",
+      "personal_strength": "个人力量",
+      "new_possibilities": "新的可能性",
+      "relating_others": "与他人关系"
+    }
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        20
+      ],
+      "level": "low",
+      "label": "创伤后成长较少",
+      "alert": null
+    },
+    {
+      "range": [
+        21,
+        50
+      ],
+      "level": "moderate",
+      "label": "有一定创伤后成长",
+      "alert": null
+    },
+    {
+      "range": [
+        51,
+        100
+      ],
+      "level": "high",
+      "label": "明显创伤后成长",
+      "alert": null
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "我培养/发展了新的兴趣",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "极少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有一些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "相当多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "new_possibilities",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "我改变了生命中重要事物的先后顺序",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "极少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有一些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "相当多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "life_appreciation",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "我对自己的生命价值有了更多的欣赏/认识",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "极少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有一些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "相当多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "life_appreciation",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "我有更多依靠自己的感觉",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "极少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有一些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "相当多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "personal_strength",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "我对精神事物有了更好的理解",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "极少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有一些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "相当多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "new_possibilities",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "我明白当我遇到困难时可以依靠他人",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "极少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有一些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "相当多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "relating_others",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "我确立了新的生命之路",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "极少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有一些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "相当多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "life_appreciation",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "我有与他人更亲近的感觉",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "极少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有一些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "相当多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "relating_others",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "我更愿意表达我的情感",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "极少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有一些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "相当多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "relating_others",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "我知道我能更好地处理困难",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "极少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有一些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "相当多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "personal_strength",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "我能以我的生命做更好的事情",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "极少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有一些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "相当多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "life_appreciation",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "我更能接受任何事情的最后结果",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "极少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有一些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "相当多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "personal_strength",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "我能更好地珍惜每一天",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "极少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有一些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "相当多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "life_appreciation",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "这次事件给我带来了新的机会",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "极少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有一些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "相当多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "new_possibilities",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "我对他人有了更多的同情",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "极少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有一些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "相当多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "new_possibilities",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 16,
+      "question_text": "我花更多精力在人际关系上",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "极少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有一些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "相当多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "personal_strength",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 17,
+      "question_text": "对需要改变的事物，我更倾向于去改变它",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "极少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有一些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "相当多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "life_appreciation",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 18,
+      "question_text": "我发现自己比想象中的更强",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "极少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有一些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "相当多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "new_possibilities",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 19,
+      "question_text": "我对人世间如此美好的体会更深了",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "极少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有一些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "相当多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "life_appreciation",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 20,
+      "question_text": "我更接受自己需要他人",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "完全没有",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "极少",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "有一些",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "中等程度",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "相当多",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "非常多",
+          "score": 5
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "relating_others",
+      "is_alert_item": false
+    }
+  ]
+}

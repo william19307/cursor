@@ -1,0 +1,1036 @@
+{
+  "name": "教师职业倦怠量表",
+  "short_name": "MBI-ES",
+  "description": "评估教师职业倦怠三维度（情绪衰竭/非人性化/个人成就感）的22题量表。由Maslach C等1996年编制，伍新春中文版，α=0.75-0.90。",
+  "applicable_levels": [],
+  "question_count": 22,
+  "estimated_mins": 10,
+  "scoring_type": "subscale",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "subscales": {
+      "ee": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "pa": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "dp": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    "subscale_labels": {
+      "ee": "情绪衰竭",
+      "pa": "个人成就感（反向倦怠）",
+      "dp": "非人性化"
+    },
+    "note": "PA维度：分越低=倦怠越重；EE和DP：分越高=倦怠越重"
+  },
+  "result_levels": [
+    {
+      "subscale": "ee",
+      "range": [
+        9,
+        16
+      ],
+      "level": "low",
+      "label": "低倦怠",
+      "alert": null
+    },
+    {
+      "subscale": "ee",
+      "range": [
+        17,
+        26
+      ],
+      "level": "moderate",
+      "label": "中度倦怠",
+      "alert": "yellow"
+    },
+    {
+      "subscale": "ee",
+      "range": [
+        27,
+        54
+      ],
+      "level": "high",
+      "label": "高度倦怠",
+      "alert": "red"
+    },
+    {
+      "subscale": "dp",
+      "range": [
+        5,
+        6
+      ],
+      "level": "low",
+      "label": "低倦怠",
+      "alert": null
+    },
+    {
+      "subscale": "dp",
+      "range": [
+        7,
+        12
+      ],
+      "level": "moderate",
+      "label": "中度倦怠",
+      "alert": "yellow"
+    },
+    {
+      "subscale": "dp",
+      "range": [
+        13,
+        30
+      ],
+      "level": "high",
+      "label": "高度倦怠",
+      "alert": "red"
+    },
+    {
+      "subscale": "pa",
+      "range": [
+        39,
+        48
+      ],
+      "level": "good",
+      "label": "成就感高",
+      "alert": null
+    },
+    {
+      "subscale": "pa",
+      "range": [
+        32,
+        38
+      ],
+      "level": "moderate",
+      "label": "成就感中等",
+      "alert": "yellow"
+    },
+    {
+      "subscale": "pa",
+      "range": [
+        8,
+        31
+      ],
+      "level": "low",
+      "label": "成就感低/倦怠",
+      "alert": "red"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "工作让我感到情绪上的疲竭",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "ee",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "工作结束时我感到精疲力竭",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "ee",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "早晨起床后要去面对一天的工作时，我感到疲惫",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "ee",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "整天与学生一起工作，对我来说是一种压力",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "ee",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "工作使我精力耗尽",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "ee",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "工作让我感到沮丧",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "ee",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "我感到我工作得太卖力了",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "ee",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "与学生近距离接触让我感到紧张",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "ee",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "在这份工作中，我感到已到了精神崩溃临界点",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "ee",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "和学生在一起，我可以很容易创造一个轻松的氛围",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "pa",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "我在工作中做了一些有价值的事情",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "pa",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "我能够帮学生找到自信",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "pa",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "我可以有效地处理学生的问题",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "pa",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "我可以给学生一些有益的指导",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "pa",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "我觉得我对他人的生活有积极影响",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "pa",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 16,
+      "question_text": "当学生遇到问题的时候，愿意和我交流",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "pa",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 17,
+      "question_text": "我可以很容易理解学生的感受",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 6
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 5
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 4
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 3
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 2
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 1
+        }
+      ],
+      "reverse_score": true,
+      "subscale_key": "pa",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 18,
+      "question_text": "我因为一点小事就把学生劈头盖脸地骂一顿",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "dp",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 19,
+      "question_text": "我对学生很苛刻",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "dp",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 20,
+      "question_text": "我有骂学生的冲动",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "dp",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 21,
+      "question_text": "我觉得学生对我处理问题的方式感到不满",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "dp",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 22,
+      "question_text": "我觉得我常把学生当作无生命的物体来对待",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 1,
+          "label": "非常不赞同",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "不赞同",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "有些不赞同",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "有些赞同",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "赞同",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "非常赞同",
+          "score": 6
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "dp",
+      "is_alert_item": false
+    }
+  ]
+}

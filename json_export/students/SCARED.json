@@ -1,0 +1,1137 @@
+{
+  "name": "儿童焦虑情绪障碍筛查表",
+  "short_name": "SCARED",
+  "description": "筛查6-18岁儿童青少年焦虑相关情绪障碍，含5类焦虑亚型。由Birmaher等1997年编制，苏林雁等2008年中文修订版。",
+  "applicable_levels": [
+    1,
+    2,
+    3
+  ],
+  "question_count": 41,
+  "estimated_mins": 10,
+  "scoring_type": "both",
+  "scoring_rule": {
+    "method": "sum",
+    "reverse_items": [],
+    "subscales": {
+      "somatic_panic": [
+        1,
+        6,
+        9,
+        12,
+        15,
+        18,
+        19,
+        22,
+        24,
+        27,
+        30,
+        34,
+        38
+      ],
+      "generalized_anxiety": [
+        5,
+        7,
+        14,
+        21,
+        23,
+        28,
+        33,
+        35,
+        37
+      ],
+      "separation_anxiety": [
+        4,
+        8,
+        13,
+        16,
+        20,
+        25,
+        29,
+        31
+      ],
+      "social_phobia": [
+        3,
+        10,
+        26,
+        32,
+        39,
+        40,
+        41
+      ],
+      "school_phobia": [
+        2,
+        11,
+        17,
+        36
+      ]
+    },
+    "subscale_labels": {
+      "somatic_panic": "躯体化/惊恐",
+      "generalized_anxiety": "广泛性焦虑",
+      "separation_anxiety": "分离焦虑",
+      "social_phobia": "社交恐怖",
+      "school_phobia": "学校恐怖"
+    },
+    "subscale_thresholds": {
+      "somatic_panic": 7,
+      "generalized_anxiety": 9,
+      "separation_anxiety": 5,
+      "social_phobia": 8,
+      "school_phobia": 3
+    }
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        22
+      ],
+      "level": "normal",
+      "label": "无明显焦虑",
+      "alert": null,
+      "note": "8-11岁总分阈值23，12-18岁男22/女24"
+    },
+    {
+      "range": [
+        23,
+        82
+      ],
+      "level": "positive",
+      "label": "焦虑阳性",
+      "alert": "orange",
+      "note": "需进一步评估"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "当我感到害怕时，呼吸困难",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "somatic_panic",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "我在学校里头疼",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "school_phobia",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "我不喜欢和不太熟悉的人在一起",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "social_phobia",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "如果我离开家，我就害怕",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "separation_anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "我担心很多事情",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "generalized_anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "当我害怕时，我感到恶心",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "somatic_panic",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "我总是担心将会发生什么事情",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "generalized_anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "当我离开家时，我思念家人",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "separation_anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "我不知为何总感到害怕",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "somatic_panic",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "见到不太熟悉的人，我就会感到紧张",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "social_phobia",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "我不想去上学",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "school_phobia",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "当我害怕时，我感到自己好像要疯了",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "somatic_panic",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "我担心独自在家睡觉",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "separation_anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "我担心是否能与别的小朋友一样好",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "generalized_anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "当我害怕时，我感到好像什么事情都不真实",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "somatic_panic",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 16,
+      "question_text": "我做梦梦见有关与家人分离的事情",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "separation_anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 17,
+      "question_text": "我担心上学",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "school_phobia",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 18,
+      "question_text": "当我害怕时，我感到心跳加快",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "somatic_panic",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 19,
+      "question_text": "我会颤抖",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "somatic_panic",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 20,
+      "question_text": "我做梦梦见有坏事发生在我的父母身上",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "separation_anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 21,
+      "question_text": "我担心事情不能很好地实现",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "generalized_anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 22,
+      "question_text": "当我害怕时，我感到出汗",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "somatic_panic",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 23,
+      "question_text": "我是一个担忧者",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "generalized_anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 24,
+      "question_text": "我不知道什么原因就会产生很强的害怕感",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "somatic_panic",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 25,
+      "question_text": "我害怕单独在家",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "separation_anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 26,
+      "question_text": "我很难与不熟悉的人交谈",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "social_phobia",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 27,
+      "question_text": "当我害怕时，我感到胸闷",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "somatic_panic",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 28,
+      "question_text": "我担心我去上学有什么不好的事情发生在我父母身上",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "generalized_anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 29,
+      "question_text": "我不想离开家",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "separation_anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 30,
+      "question_text": "当我害怕时，我感到头昏眼花",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "somatic_panic",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 31,
+      "question_text": "我担心有什么坏事情发生在我的父母身上",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "separation_anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 32,
+      "question_text": "我感到羞于见人",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "social_phobia",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 33,
+      "question_text": "我担心将来会发生的事情",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "generalized_anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 34,
+      "question_text": "当我害怕时，我感到恶心或肚子痛",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "somatic_panic",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 35,
+      "question_text": "我担心自己把事情没有做好",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "generalized_anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 36,
+      "question_text": "上学前，我害怕上学",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "school_phobia",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 37,
+      "question_text": "我担心已经发生的事情",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "generalized_anxiety",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 38,
+      "question_text": "当我害怕时，我感到头昏",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "somatic_panic",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 39,
+      "question_text": "当其他孩子在一起笑的时候，如果我认为他们在笑我，我感到很不舒服",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "social_phobia",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 40,
+      "question_text": "我是一个羞怯的孩子",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "social_phobia",
+      "is_alert_item": false
+    },
+    {
+      "question_no": 41,
+      "question_text": "在学校或聚会场合逃跑",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "没有此问题",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "有时有此问题",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "经常有此问题",
+          "score": 2
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": "social_phobia",
+      "is_alert_item": false
+    }
+  ]
+}

@@ -1,0 +1,1093 @@
+{
+  "name": "睡眠功能失调信念量表（16题）",
+  "short_name": "DBAS-16",
+  "description": "评估对睡眠的不合理信念，16题，0-10分十一级评分（0=完全不同意，10=完全同意）。由Morin CM等2007年编制，α=0.80。",
+  "applicable_levels": [],
+  "question_count": 16,
+  "estimated_mins": 8,
+  "scoring_type": "total",
+  "scoring_rule": {
+    "method": "formula",
+    "formula": "mean = sum / 16",
+    "reverse_items": [],
+    "subscales": {}
+  },
+  "result_levels": [
+    {
+      "range": [
+        0,
+        40
+      ],
+      "level": "low",
+      "label": "睡眠信念合理",
+      "alert": null,
+      "note": "总分（0-160）"
+    },
+    {
+      "range": [
+        41,
+        80
+      ],
+      "level": "moderate",
+      "label": "存在一定功能失调信念",
+      "alert": "yellow",
+      "note": "总分"
+    },
+    {
+      "range": [
+        81,
+        160
+      ],
+      "level": "high",
+      "label": "功能失调信念较多",
+      "alert": "orange",
+      "note": "总分"
+    }
+  ],
+  "alert_rules": {
+    "item_rules": []
+  },
+  "is_active": true,
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "我需要睡满8小时才能在白天感觉神清气爽，表现良好",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "0",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "1",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9",
+          "score": 9
+        },
+        {
+          "value": 10,
+          "label": "10",
+          "score": 10
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 2,
+      "question_text": "当我有一两晚睡不好的时候，我知道这会影响接下来一周的日程安排",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "0",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "1",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9",
+          "score": 9
+        },
+        {
+          "value": 10,
+          "label": "10",
+          "score": 10
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 3,
+      "question_text": "当我睡眠不好时，我担心我可能会精神崩溃",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "0",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "1",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9",
+          "score": 9
+        },
+        {
+          "value": 10,
+          "label": "10",
+          "score": 10
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 4,
+      "question_text": "我觉得我对睡眠没有任何掌控力",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "0",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "1",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9",
+          "score": 9
+        },
+        {
+          "value": 10,
+          "label": "10",
+          "score": 10
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 5,
+      "question_text": "我担心，如果两三天不睡觉，我可能会患上神经疾病",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "0",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "1",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9",
+          "score": 9
+        },
+        {
+          "value": 10,
+          "label": "10",
+          "score": 10
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 6,
+      "question_text": "当我感到沮丧或忧虑时，我的睡眠必然会受到影响",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "0",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "1",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9",
+          "score": 9
+        },
+        {
+          "value": 10,
+          "label": "10",
+          "score": 10
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 7,
+      "question_text": "我相信失眠是由于一种化学失衡造成的",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "0",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "1",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9",
+          "score": 9
+        },
+        {
+          "value": 10,
+          "label": "10",
+          "score": 10
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 8,
+      "question_text": "我认为当我失眠时我可能会感觉很糟糕，因为我什么事都做不了",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "0",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "1",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9",
+          "score": 9
+        },
+        {
+          "value": 10,
+          "label": "10",
+          "score": 10
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 9,
+      "question_text": "我永远无法预测我能否好好睡一觉",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "0",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "1",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9",
+          "score": 9
+        },
+        {
+          "value": 10,
+          "label": "10",
+          "score": 10
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 10,
+      "question_text": "没有服用安眠药我就无法睡个好觉",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "0",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "1",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9",
+          "score": 9
+        },
+        {
+          "value": 10,
+          "label": "10",
+          "score": 10
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 11,
+      "question_text": "当我晚上睡得不好时，我知道这会影响到我第二天做事",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "0",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "1",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9",
+          "score": 9
+        },
+        {
+          "value": 10,
+          "label": "10",
+          "score": 10
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 12,
+      "question_text": "为了保持白天的功能并保持健康，我相信一定需要睡一整夜",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "0",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "1",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9",
+          "score": 9
+        },
+        {
+          "value": 10,
+          "label": "10",
+          "score": 10
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 13,
+      "question_text": "我认为失眠是一种医学疾病",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "0",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "1",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9",
+          "score": 9
+        },
+        {
+          "value": 10,
+          "label": "10",
+          "score": 10
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 14,
+      "question_text": "当我很难入睡时，就继续躺在床上，努力继续尝试",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "0",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "1",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9",
+          "score": 9
+        },
+        {
+          "value": 10,
+          "label": "10",
+          "score": 10
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 15,
+      "question_text": "我担心长期缺乏睡眠会对健康产生严重影响",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "0",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "1",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9",
+          "score": 9
+        },
+        {
+          "value": 10,
+          "label": "10",
+          "score": 10
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    },
+    {
+      "question_no": 16,
+      "question_text": "我很难在夜里醒来后重新入睡",
+      "question_type": "likert",
+      "options": [
+        {
+          "value": 0,
+          "label": "0",
+          "score": 0
+        },
+        {
+          "value": 1,
+          "label": "1",
+          "score": 1
+        },
+        {
+          "value": 2,
+          "label": "2",
+          "score": 2
+        },
+        {
+          "value": 3,
+          "label": "3",
+          "score": 3
+        },
+        {
+          "value": 4,
+          "label": "4",
+          "score": 4
+        },
+        {
+          "value": 5,
+          "label": "5",
+          "score": 5
+        },
+        {
+          "value": 6,
+          "label": "6",
+          "score": 6
+        },
+        {
+          "value": 7,
+          "label": "7",
+          "score": 7
+        },
+        {
+          "value": 8,
+          "label": "8",
+          "score": 8
+        },
+        {
+          "value": 9,
+          "label": "9",
+          "score": 9
+        },
+        {
+          "value": 10,
+          "label": "10",
+          "score": 10
+        }
+      ],
+      "reverse_score": false,
+      "subscale_key": null,
+      "is_alert_item": false
+    }
+  ]
+}
