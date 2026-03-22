@@ -1,3 +1,10 @@
+# ❌ 儿童自我概念量表（Piers-Harris）
+
+> **系统录入说明**：
+> Piers-Harris 是商业版权量表，完整80题须从 Western Psychological Services（wpspublish.com）付费购买。
+> **不能直接录入系统使用**。
+> 如需替代，可用已收录的 **SES（Rosenberg自尊量表，10题，免费）** 或 **CSES（儿童自尊量表，26题）**。
+
 # 儿童自我概念量表（Piers-Harris）
 
 ## 基本信息
